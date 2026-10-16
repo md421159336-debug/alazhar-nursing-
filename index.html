@@ -19,6 +19,7 @@ header:after{content:"";position:absolute;width:340px;height:340px;border:1px so
 main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-48px;position:relative;z-index:2}.quick{background:white;border:1px solid var(--line);border-radius:17px;padding:18px;box-shadow:var(--shadow);transition:.2s}.quick:hover,.card:hover{transform:translateY(-3px)}.quick .ico{font-size:24px}.quick h3{font-size:16px;margin:8px 0 2px}.quick p{font-size:12px;color:var(--muted);margin:0}
 section{scroll-margin-top:20px;margin-top:42px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:17px}.section-head h2{margin:0;font-size:24px;color:var(--navy)}.section-head p{margin:4px 0 0;color:var(--muted);font-size:14px}.pill{font-size:12px;color:var(--navy2);background:#e3f4f1;padding:6px 11px;border-radius:99px;white-space:nowrap}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:white;border:1px solid var(--line);border-radius:17px;padding:20px;box-shadow:var(--shadow);transition:.2s}.card h3{margin:0 0 7px;font-size:18px;color:var(--navy)}.card p{margin:0 0 15px;color:var(--muted);font-size:13px}.card .action{display:inline-flex;align-items:center;gap:7px;color:var(--navy2);font-size:13px;font-weight:bold;background:#edf4f8;padding:8px 12px;border-radius:9px}.year{border:1px solid var(--line);border-radius:15px;background:white;margin-bottom:10px;overflow:hidden}.year summary{cursor:pointer;padding:16px 19px;font-weight:bold;color:var(--navy);display:flex;justify-content:space-between;gap:10px;list-style:none}.year summary::-webkit-details-marker{display:none}.year summary:after{content:"＋";color:var(--teal)}.year[open] summary:after{content:"−"}.year-content{padding:0 19px 18px}.semester{background:#f5f8fa;border-radius:12px;padding:13px;margin-top:10px}.semester h4{margin:0 0 9px;color:var(--navy2)}.subject-list{display:flex;flex-wrap:wrap;gap:8px}.subject{font-size:13px;border:1px solid #dbe5eb;border-radius:8px;background:white;padding:7px 10px;color:#465c6b}
+.subject a{color:var(--teal);text-decoration:underline;font-weight:bold}
 .links-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.link-row{display:flex;align-items:center;gap:13px;background:white;border:1px solid var(--line);border-radius:14px;padding:15px}.link-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:#e7f4f1;font-size:21px;flex-shrink:0}.link-row strong{display:block;color:var(--navy)}.link-row small{color:var(--muted)}.link-row .go{margin-right:auto;color:var(--teal);font-weight:bold}
 .notice{margin-top:22px;background:#fff8e8;border:1px solid #f4dfad;color:#74551a;border-radius:13px;padding:13px 16px;font-size:13px}
 footer{background:#0b2335;color:#d8e5ed;padding:28px 0;text-align:center;font-size:13px}footer strong{color:white}footer p{margin:5px 0}.footer-note{color:#9eb6c5;font-size:12px}
@@ -49,61 +50,101 @@ footer{background:#0b2335;color:#d8e5ed;padding:28px 0;text-align:center;font-si
   </div>
 
   <section id="plan" data-searchable>
-    <div class="section-head"><div><h2>الخطة الدراسية</h2><p>اختر المستوى للوصول إلى مواد الفصل الدراسي.</p></div><span class="pill">المستويات الأربعة</span></div>
+    <div class="section-head"><div><h2>الخطة الدراسية والمواد</h2><p>تصفح مواد السنوات الأربع والفصول الدراسية، وادخل البوت للحصول على الملفات الكاملة.</p></div><span class="pill">المستويات الأربعة</span></div>
     <div id="planList">
+      
+      <!-- السنة الأولى -->
       <details class="year" open data-searchable><summary>السنة الأولى</summary><div class="year-content">
-        <div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject">تُضاف المواد حسب الخطة المعتمدة</span></div></div>
-        <div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject">تُضاف المواد حسب الخطة المعتمدة</span></div></div>
+        <div class="semester"><h4>الفصل الأول</h4><div class="subject-list">
+          <span class="subject">أساسيات تمريض (1)</span>
+          <span class="subject">تشريح وظائف أعضاء</span>
+          <span class="subject">مقررات متطلبات جامعة/كلية</span>
+        </div></div>
+        <div class="semester"><h4>الفصل الثاني</h4><div class="subject-list">
+          <span class="subject">أساسيات تمريض (2)</span>
+          <span class="subject">علم الأحياء الدقيقة (Microbiology)</span>
+          <span class="subject">علم وظائف الأعضاء</span>
+        </div></div>
       </div></details>
+
+      <!-- السنة الثانية -->
       <details class="year" data-searchable><summary>السنة الثانية</summary><div class="year-content">
-        <div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject">تُضاف المواد حسب الخطة المعتمدة</span></div></div>
-        <div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject">تُضاف المواد حسب الخطة المعتمدة</span></div></div>
+        <div class="semester"><h4>الفصل الأول</h4><div class="subject-list">
+          <span class="subject">تمريض باطني جراحي (1)</span>
+          <span class="subject">علم الأدوية للتمريض (Pharmacology)</span>
+          <span class="subject">علم الأمراض (Pathology)</span>
+        </div></div>
+        <div class="semester"><h4>الفصل الثاني</h4><div class="subject-list">
+          <span class="subject">تمريض باطني جراحي (2)</span>
+          <span class="subject">تمريض صحة البالغين</span>
+          <span class="subject">تقييم الحالة الصحية</span>
+        </div></div>
       </div></details>
+
+      <!-- السنة الثالثة -->
       <details class="year" data-searchable><summary>السنة الثالثة</summary><div class="year-content">
-        <div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject">تُضاف المواد حسب الخطة المعتمدة</span></div></div>
-        <div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject">تُضاف المواد حسب الخطة المعتمدة</span></div></div>
+        <div class="semester"><h4>الفصل الأول</h4><div class="subject-list">
+          <span class="subject">تمريض الأطفال (النظري والعملي)</span>
+          <span class="subject">تمريض النساء والتوليد</span>
+          <span class="subject">الإحصاء الحيوي والأبحاث</span>
+        </div></div>
+        <div class="semester"><h4>الفصل الثاني</h4><div class="subject-list">
+          <span class="subject">تمريض صحة المجتمع</span>
+          <span class="subject">تمريض الصحة النفسية والعقلية</span>
+          <span class="subject">أخلاقيات مهنة التمريض</span>
+        </div></div>
       </div></details>
+
+      <!-- السنة الرابعة -->
       <details class="year" data-searchable><summary>السنة الرابعة</summary><div class="year-content">
-        <div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject">تُضاف المواد حسب الخطة المعتمدة</span></div></div>
-        <div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject">تُضاف المواد حسب الخطة المعتمدة</span></div></div>
+        <div class="semester"><h4>الفصل الأول</h4><div class="subject-list">
+          <span class="subject">تمريض الحالات الحرجة والطوارئ</span>
+          <span class="subject">إدارة وقرادة التمريض</span>
+          <span class="subject">بحث تخرج (1)</span>
+        </div></div>
+        <div class="semester"><h4>الفصل الثاني</h4><div class="subject-list">
+          <span class="subject">تدريب عملي ميداني مكثف (الامتياز/السريري)</span>
+          <span class="subject">بحث تخرج (2)</span>
+        </div></div>
       </div></details>
+
     </div>
   </section>
 
   <section id="materials" data-searchable>
-    <div class="section-head"><div><h2>المواد الدراسية</h2><p>مساحة منظمة لملفات المحاضرات والملخصات والأسئلة.</p></div><span class="pill">حسب المستوى والفصل</span></div>
+    <div class="section-head"><div><h2>المواد الدراسية والمحاضرات</h2><p>يمكنك تحميل المحاضرات والملخصات مباشرة عبر بوت التيليجرام الرسمي للمكتبة.</p></div><span class="pill">محدث باستمرار</span></div>
     <div class="grid" id="materialCards">
-      <article class="card" data-searchable><h3>تمريض سنة أولى</h3><p>محاضرات، عروض، ملخصات وأسئلة تدريبية.</p><a class="action" href="#plan">استعراض المستوى ←</a></article>
-      <article class="card" data-searchable><h3>تمريض سنة ثانية</h3><p>مواد المستوى الثاني وملفات المراجعة.</p><a class="action" href="#plan">استعراض المستوى ←</a></article>
-      <article class="card" data-searchable><h3>تمريض سنة ثالثة</h3><p>مواد الفصل الأول والثاني والتدريب العملي.</p><a class="action" href="#plan">استعراض المستوى ←</a></article>
-      <article class="card" data-searchable><h3>تمريض سنة رابعة</h3><p>المواد التخصصية والسريرية وملفاتها.</p><a class="action" href="#plan">استعراض المستوى ←</a></article>
-      <article class="card" data-searchable><h3>المهارات العملية</h3><p>إجراءات تمريضية وقوائم تحقق ومراجعات عملية.</p><a class="action" href="#groups">روابط المجموعات ←</a></article>
-      <article class="card" data-searchable><h3>الأسئلة والمراجعات</h3><p>أضف هنا نماذج الأسئلة والاختبارات التدريبية.</p><a class="action" href="#links">الروابط المتاحة ←</a></article>
+      <article class="card" data-searchable><h3>السنة الأولى</h3><p>محاضرات، تفريغات وملخصات السنة الأولى.</p><a class="action" href="https://t.me/Nurse2024unibot" target="_blank">فتح بوت الملفات ↗</a></article>
+      <article class="card" data-searchable><h3>السنة الثانية</h3><p>كتب وملفات مواد الباطني والأدوية.</p><a class="action" href="https://t.me/Nurse2024unibot" target="_blank">فتح بوت الملفات ↗</a></article>
+      <article class="card" data-searchable><h3>السنة الثالثة</h3><p>مواد الأطفال، النساء والولادة والصحة النفسية.</p><a class="action" href="https://t.me/Nurse2024unibot" target="_blank">فتح بوت الملفات ↗</a></article>
+      <article class="card" data-searchable><h3>السنة الرابعة</h3><p>ملفات الحالات الحرجة والتدريب العملي.</p><a class="action" href="https://t.me/Nurse2024unibot" target="_blank">فتح بوت الملفات ↗</a></article>
+      <article class="card" data-searchable><h3>المهارات العملية</h3><p>إجراءات ودليلات العملي السريري.</p><a class="action" href="https://t.me/Nurse2024unibot" target="_blank">فتح بوت الملفات ↗</a></article>
+      <article class="card" data-searchable><h3>بنك الأسئلة والامتحانات</h3><p>نماذج الامتحانات السابقة والأسئلة التدريبية.</p><a class="action" href="https://t.me/Nurse2024unibot" target="_blank">فتح بوت الملفات ↗</a></article>
     </div>
   </section>
 
   <section id="links" data-searchable>
-    <div class="section-head"><div><h2>روابط مهمة</h2><p>الوصول السريع إلى المنصات والخدمات الجامعية.</p></div></div>
+    <div class="section-head"><div><h2>روابط مهمة</h2><p>الوصول السريع إلى المنصات والخدمات الجامعية والبوتات المعتمدة.</p></div></div>
     <div class="links-list">
-      <a class="link-row" href="https://moodle.alazhar.edu.ps/login/index.php" target="_blank" rel="noopener"><span class="link-icon">🎓</span><span><strong>منصة Moodle</strong><small>المحاضرات والملفات الدراسية</small></span><span class="go">فتح ↗</span></a>
+      <a class="link-row" href="https://t.me/Nurse2024unibot" target="_blank" rel="noopener"><span class="link-icon">🤖</span><span><strong>بوت مكتبة التمريض الشامل</strong><small>الحصول على كافة المحاضرات والملفات</small></span><span class="go">فتح البوت ↗</span></a>
+      <a class="link-row" href="https://moodle.alazhar.edu.ps/login/index.php" target="_blank" rel="noopener"><span class="link-icon">🎓</span><span><strong>منصة Moodle</strong><small>المحاضرات والملفات الدراسية الرسمية</small></span><span class="go">فتح ↗</span></a>
       <a class="link-row" href="https://alazhar.edu.ps/" target="_blank" rel="noopener"><span class="link-icon">🏛️</span><span><strong>موقع جامعة الأزهر</strong><small>الموقع الرسمي للجامعة</small></span><span class="go">فتح ↗</span></a>
-      <a class="link-row" href="https://t.me/Nurse2024unibot" target="_blank" rel="noopener"><span class="link-icon">🤖</span><span><strong>بوت مكتبة التمريض</strong><small>الوصول إلى الموارد عبر تيليجرام</small></span><span class="go">فتح ↗</span></a>
       <a class="link-row" href="https://t.me/Requirements_AUG_bot" target="_blank" rel="noopener"><span class="link-icon">📝</span><span><strong>بوت المتطلبات الجامعية</strong><small>متابعة متطلبات الجامعة</small></span><span class="go">فتح ↗</span></a>
     </div>
   </section>
 
   <section id="groups" data-searchable>
-    <div class="section-head"><div><h2>القروبات الطلابية</h2><p>ضع روابط القروبات الرسمية لكل دفعة وفصل هنا.</p></div><span class="pill">تحديث مستمر</span></div>
+    <div class="section-head"><div><h2>القروبات الطلابية</h2><p>تواصل مع زملائك عبر قروبات الدفعات والمواد.</p></div><span class="pill">تنسيق طلابي</span></div>
     <div class="grid">
-      <article class="card"><h3>قروبات السنة الأولى</h3><p>قروب الدفعة والإعلانات الدراسية.</p><span class="action">يُضاف الرابط لاحقًا</span></article>
-      <article class="card"><h3>قروبات السنة الثانية</h3><p>قروبات المواد والتنسيق الأكاديمي.</p><span class="action">يُضاف الرابط لاحقًا</span></article>
-      <article class="card"><h3>قروبات السنة الثالثة</h3><p>قروبات الفصل والمواد والتدريب العملي.</p><span class="action">يُضاف الرابط لاحقًا</span></article>
-      <article class="card"><h3>قروبات السنة الرابعة</h3><p>قروبات المواد والتدريب السريري.</p><span class="action">يُضاف الرابط لاحقًا</span></article>
-      <article class="card"><h3>التدريب العملي والسريري</h3><p>روابط المجموعات حسب المستشفى والمنطقة.</p><span class="action">يُضاف الرابط لاحقًا</span></article>
-      <article class="card"><h3>إعلانات قسم التمريض</h3><p>التعاميم والتنبيهات المهمة للطلبة.</p><span class="action">يُضاف الرابط لاحقًا</span></article>
+      <article class="card"><h3>قروبات السنة الأولى</h3><p>متابعة إعلانات ومواد الدفعة.</p><a class="action" href="https://t.me/Nurse2024unibot" target="_blank">عبر البوت ↗</a></article>
+      <article class="card"><h3>قروبات السنة الثانية</h3><p>تنسيق المواد والتخصص.</p><a class="action" href="https://t.me/Nurse2024unibot" target="_blank">عبر البوت ↗</a></article>
+      <article class="card"><h3>قروبات السنة الثالثة</h3><p>مواد الفصل والتدريب العملي.</p><a class="action" href="https://t.me/Nurse2024unibot" target="_blank">عبر البوت ↗</a></article>
+      <article class="card"><h3>قروبات السنة الرابعة</h3><p>التدريب السريري ومشاريع التخرج.</p><a class="action" href="https://t.me/Nurse2024unibot" target="_blank">عبر البوت ↗</a></article>
+      <article class="card"><h3>التدريب العملي والسريري</h3><p>مجموعات المستشفيات والمناطق.</p><a class="action" href="https://t.me/Nurse2024unibot" target="_blank">عبر البوت ↗</a></article>
+      <article class="card"><h3>إعلانات قسم التمريض</h3><p>التعاميم والتنبيهات الرسمية.</p><a class="action" href="https://t.me/Nurse2024unibot" target="_blank">عبر البوت ↗</a></article>
     </div>
   </section>
-  <div class="notice">ملاحظة: هذه نسخة أولية قابلة للنشر. يجب إضافة الخطة الدراسية الرسمية وروابط القروبات والملفات الفعلية قبل اعتمادها كمرجع نهائي. تأكد من أن الملفات المنشورة مسموح بمشاركتها.</div>
+  <div class="notice">ملاحظة: تم دمج الخطة الدراسية وأقسام السنوات الثانية والثالثة والرابعة وربطها ببوت التمريض الرسمي لتسهيل الوصول للملفات.</div>
 </main>
 <footer><div class="wrap"><strong>مكتبة التمريض | جامعة الأزهر – غزة</strong><p>العلم رسالة، والتمريض إنسانية.</p><p class="footer-note">مبادرة طلابية لتنظيم الموارد الأكاديمية — ليست موقعًا رسميًا للجامعة.</p></div></footer>
 <script>
