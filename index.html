@@ -27,7 +27,7 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
 <div class="quicklinks"><button type="button" class="quick quick-toggle" data-target="plan" aria-expanded="true"><div class="ico">🗓️</div><h3>الخطة الدراسية</h3><p>اضغط لعرض أو إخفاء المستويات والفصول</p></button><button type="button" class="quick quick-toggle" data-target="materials" aria-expanded="true"><div class="ico">📚</div><h3>أقسام المواد</h3><p>اضغط لعرض أو إخفاء توزيع المواد</p></button><button type="button" class="quick quick-toggle" data-target="groups" aria-expanded="true"><div class="ico">👥</div><h3>القروبات الطلابية</h3><p>اضغط لعرض أو إخفاء أقسام القروبات</p></button><button type="button" class="quick quick-toggle" data-target="links" aria-expanded="true"><div class="ico">🔗</div><h3>روابط مهمة</h3><p>اضغط لعرض أو إخفاء الروابط</p></button></div>
 <section id="plan" data-searchable><div class="section-head"><div><h2>الخطة الدراسية (خطة التمريض)</h2><p>تفاصيل مواد السنوات الأربع والفصول الدراسية حسب القائمة المضافة.</p><a href="./Plan-nursing.pdf" target="_blank" class="download-btn">📄 عرض / تحميل خطة التمريض (PDF)</a></div><span class="pill">المستويات الأربعة</span></div><div id="planList">
 <details class="year" data-searchable><summary>السنة الأولى</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject">قرآن كريم (1)</span><span class="subject">اللغة العربية (1)</span><span class="subject">اللغة الإنجليزية (1)</span><span class="subject">تشريح وعلم وظائف الأعضاء (1)</span><span class="subject">مفردات طبية</span><span class="subject">بيولوجيا عامة</span><span class="subject">كيمياء للعلوم الصحية</span><span class="subject">الإسعافات الأولية</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject">دراسات في الفقه</span><span class="subject">تشريح وعلم وظائف الأعضاء (2)</span><span class="subject">رياضيات للعلوم الصحية</span><span class="subject">فيزياء للعلوم الصحية</span><span class="subject">كيمياء حيوية (1)</span><span class="subject">مبادئ الصحة النفسية</span></div></div></div></details>
-<details class="year" data-searchable><summary>السنة الثانية</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject">دراسات في الحديث وعلومه</span><span class="subject">دراسات في العقيدة الإسلامية</span><span class="subject">أخلاقيات مهنة التمريض</span><span class="subject">أساسيات التمريض (1) نظري</span><span class="subject">أساسيات تمريض (1) عملي</span><span class="subject">علم الأدوية</span><span class="subject">علم الأمراض</span><span class="subject">علم حساب الجرعة العلاجية</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject">قرآن كريم (2)</span><span class="subject">أساسيات التمريض (2) نظري</span><span class="subject">أساسيات التمريض (2) عملي</span><span class="subject">التقييم الصحي السريري للمريض</span><span class="subject">تمريض جراحة باطنة (1) نظري</span><span class="subject">تمريض جراحة باطنة (1) عملي</span></div></div><div class="semester"><h4>الفصل الصيفي</h4><div class="subject-list"><span class="subject">تدريب اكلينيكي</span></div></div></div></details>
+<details class="year" data-searchable><summary>السنة الثانية</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject">دراسات في الحديث وعلومه</span><span class="subject">دراسات في العقيدة الإسلامية</span><button type="button" class="subject subject-button" data-course="ethics" aria-haspopup="true">أخلاقيات مهنة التمريض ↗</button><button type="button" class="subject subject-button" data-course="fundamentals1" aria-haspopup="true">أساسيات التمريض (1) نظري ↗</button><span class="subject">أساسيات تمريض (1) عملي</span><button type="button" class="subject subject-button" data-course="pharma" aria-haspopup="true">علم الأدوية ↗</button><button type="button" class="subject subject-button" data-course="patho" aria-haspopup="true">علم الأمراض ↗</button><button type="button" class="subject subject-button" data-course="dosage" aria-haspopup="true">علم حساب الجرعة العلاجية ↗</button></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject">قرآن كريم (2)</span><span class="subject">أساسيات التمريض (2) نظري</span><span class="subject">أساسيات التمريض (2) عملي</span><span class="subject">التقييم الصحي السريري للمريض</span><span class="subject">تمريض جراحة باطنة (1) نظري</span><span class="subject">تمريض جراحة باطنة (1) عملي</span></div></div><div class="semester"><h4>الفصل الصيفي</h4><div class="subject-list"><span class="subject">تدريب اكلينيكي</span></div></div></div></details>
 <details class="year" data-searchable><summary>السنة الثالثة</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject">قرآن كريم (3)</span><span class="subject">علم النمو والتطور للإنسان</span><button type="button" class="subject subject-button" data-course="surgery2" aria-haspopup="true">تمريض جراحة باطنة (2) نظري <span aria-hidden="true">↗</span></button><span class="subject">تمريض جراحة باطنة (2) عملي</span><span class="subject">تمريض أطفال وحديثي الولادة نظري</span><span class="subject">تمريض أطفال وحديثي الولادة عملي</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject">دراسات في التفسير وعلوم القرآن</span><span class="subject">علم التغذية</span><span class="subject">علم الأحياء الدقيقة</span><span class="subject">تمريض جراحة باطنه (3) - Gerontology نظري</span><span class="subject">تمريض جراحة باطنه (3) - Gerontology عملي</span><span class="subject">تمريض الصحة النفسية / نظري</span><span class="subject">تمريض الصحة النفسية / عملي</span></div></div></div></details>
 <details class="year" data-searchable><summary>السنة الرابعة</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject">فلسطين الأرض والإنسان</span><span class="subject">النظريات التمريضية</span><span class="subject">مناهج البحث العلمي للتمريض</span><span class="subject">الصحة العامة وعلم الوبائيات</span><span class="subject">تمريض النساء والولادة نظري</span><span class="subject">تمريض النساء والولادة عملي</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject">قرآن كريم (4)</span><span class="subject">علوم البيئة</span><span class="subject">مدخل لعلوم الأشعة</span><span class="subject">تمريض العناية المكثفة / نظري</span><span class="subject">تمريض العناية المكثفة / عملي</span><span class="subject">تمريض صحة المجتمع نظري</span><span class="subject">تمريض صحة المجتمع عملي</span><span class="subject">الإدارة والقيادة في التمريض / النظري</span><span class="subject">الإدارة والقيادة في التمريض / عملي</span><span class="subject">تدريب امتياز</span></div></div></div></details>
 </div></section>
@@ -39,6 +39,7 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
   </div>
   <div id="lectureContent" class="lecture-content" hidden>
     <button type="button" class="page-back" id="backToOptionsLectures">← العودة إلى خيارات المادة</button>
+    <div id="customLecturesContainer"></div>
     <div id="surgeryOnlyLectures" class="surgery-only">
     <div class="lecture-heading"><h3>محاضرات جراحة (2) مع د. يوسف خليفة</h3><span class="pill">25 فيديو</span></div>
     <div class="lecture-list">
@@ -90,7 +91,7 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
 const searchForm=document.getElementById('searchForm');const searchInput=document.getElementById('searchInput');const searchable=[...document.querySelectorAll('[data-searchable]')];
 function runSearch(){const q=searchInput.value.trim().toLocaleLowerCase('ar');searchable.forEach(el=>{const match=!q||el.innerText.toLocaleLowerCase('ar').includes(q);el.style.display=match?'':'none';});if(q){document.querySelectorAll('details.year').forEach(el=>{if(el.innerText.toLocaleLowerCase('ar').includes(q))el.open=true;});}}
 searchForm.addEventListener('submit',e=>{e.preventDefault();runSearch();});searchInput.addEventListener('input',runSearch);
-// كل بطاقة علوية تعمل بالضغط: إظهار القسم أو إخفاؤه
+
 const quickToggles = document.querySelectorAll('.quick-toggle');
 quickToggles.forEach(button => {
   const target = document.getElementById(button.dataset.target);
@@ -103,7 +104,6 @@ quickToggles.forEach(button => {
   });
 });
 
-// بطاقة إعلانات قسم التمريض تُظهر التفاصيل وتخفيها عند الضغط
 const departmentToggle=document.getElementById('departmentToggle');
 const departmentSection=document.getElementById('department');
 const departmentToggleLabel=document.getElementById('departmentToggleLabel');
@@ -116,7 +116,7 @@ departmentToggle.addEventListener('click',e=>{
   departmentToggleLabel.textContent=opening?'إخفاء التفاصيل ↑':'اضغط لعرض التفاصيل ↓';
   if(opening) departmentSection.scrollIntoView({behavior:'smooth',block:'start'});
 });
-// فتح أي مادة من الخطة الدراسية بنفس واجهة المحاضرات والسلايدات
+
 const courseResources=document.getElementById('courseResources');
 const closeCourse=document.getElementById('closeCourse');
 const showLectures=document.getElementById('showLectures');
@@ -126,13 +126,150 @@ const slidesContent=document.getElementById('slidesContent');
 const courseTitle=document.getElementById('courseTitle');
 const courseSubtitle=document.getElementById('courseSubtitle');
 const surgeryOnlyLectures=document.getElementById('surgeryOnlyLectures');
+const customLecturesContainer=document.getElementById('customLecturesContainer');
 const lecturesPlaceholder=document.getElementById('lecturesPlaceholder');
 const slidesTitle=document.getElementById('slidesTitle');
 const slidesMessage=document.getElementById('slidesMessage');
 let activeCourseId='surgery2';
 let activeCourseName='تمريض جراحة باطنة (2) نظري';
 
-// تحويل جميع أسماء المواد إلى أزرار قابلة للفتح، مع إبقاء جراحة (2) وروابطها الحالية.
+// بيانات المحاضرات لكل مادة
+const coursesData = {
+  patho: {
+    title: "علم الأمراض",
+    subtitle: "حركة الشبيبة الفتحاوية - سلسلة محاضرات المادة كاملة",
+    lectures: [
+      { name: "المحاضرة الأولى", link: "https://youtu.be/sroSJP-X7cE" },
+      { name: "المحاضرة الثانية", link: "https://youtu.be/LkT7_JEhnT8" },
+      { name: "المحاضرة الثالثة", link: "https://youtu.be/PTghIanbj20" },
+      { name: "المحاضرة الرابعة", link: "https://youtu.be/Hq-Ud4ZkDhs" },
+      { name: "المحاضرة الخامسة", link: "https://youtu.be/fHakL_Vu36I" },
+      { name: "المحاضرة السادسة", link: "https://youtu.be/Xo7YSRiP99M" },
+      { name: "المحاضرة السابعة", link: "https://youtu.be/Z4zuP1s5MiA" },
+      { name: "المحاضرة الثامنة", link: "https://youtu.be/2mfkJNS0bPQ" },
+      { name: "المحاضرة التاسعة", link: "https://youtu.be/-XwDWUo9430" },
+      { name: "المحاضرة العاشرة", link: "https://youtu.be/doLPBupHMVI" },
+      { name: "المحاضرة 11", link: "https://youtu.be/pmfWsMRhlJA?si=sR_MTYEQJe52SIFo" },
+      { name: "المحاضرة 12", link: "https://youtu.be/fK7qt_VKPi8?si=Cn9-w9t1a1DDOkY3" },
+      { name: "المحاضرة 13", link: "https://youtu.be/18tThYavQ0o?si=8fKL2_WxPI-JsvYl" },
+      { name: "المحاضرة 14", link: "https://youtu.be/le3bmVylvk8?si=Bl7IMXNXlvR46QyZ" },
+      { name: "المحاضرة 15", link: "https://youtu.be/AhUbTgTbTtg?si=QI_RRlyJYM7g5iQ0" },
+      { name: "المحاضرة 16", link: "https://youtu.be/d3qRjDnOxmQ?si=rD0jmeyz2q4dNZIU" },
+      { name: "المحاضرة 17", link: "https://youtu.be/NpHVY1brSXk?si=bjlIz2kvjR-S47fc" },
+      { name: "المحاضرة 18", link: "https://youtu.be/SGgs37hUuYk?si=bqgWcDxdUUdYxyuC" },
+      { name: "المحاضرة 19", link: "https://youtu.be/sxMyTbFhtnA?si=G7SvNBkS6GceXiYK" },
+      { name: "المحاضرة 20", link: "https://youtu.be/vqEJ-s2HN2Q?si=_bDOumpbxz5GLmxu" },
+      { name: "المحاضرة 21", link: "https://youtu.be/NKCyo5UPE3U" },
+      { name: "المحاضرة 22", link: "https://youtu.be/JYid9Ob9OJI" }
+    ]
+  },
+  pharma: {
+    title: "علم الأدوية",
+    subtitle: "حركة الشبيبة الفتحاوية - سلسلة محاضرات علم الأدوية",
+    lectures: [
+      { name: "المحاضرة الأولى", link: "https://youtu.be/2J3h8ONRUFI?si=0Hv9WS8ypEtvdn4h" },
+      { name: "المحاضرة الثانية", link: "https://youtu.be/SMHMq9XxX58" },
+      { name: "المحاضرة الثالثة", link: "https://youtu.be/14mITrgN0nM" },
+      { name: "المحاضرة الرابعة", link: "https://youtu.be/ihcQNCovp4E" },
+      { name: "المحاضرة الخامسة", link: "https://youtu.be/7JUs-4w7664" },
+      { name: "المحاضرة السادسة", link: "https://youtu.be/NqD0h5PGa-o" },
+      { name: "المحاضرة السابعة", link: "https://youtu.be/52r4bdfvOaE" },
+      { name: "المحاضرة الثامنة", link: "https://youtu.be/MFbuKhYwu4I" },
+      { name: "المحاضرة التاسعة", link: "https://youtu.be/a3O-hRVDpMk" },
+      { name: "المحاضرة العاشرة", link: "https://youtu.be/MmfCb56TVFo" },
+      { name: "المحاضرة 11", link: "https://youtu.be/t-KrMHm3_FY" },
+      { name: "المحاضرة 12", link: "https://youtu.be/Nz-M1drqAKs" },
+      { name: "المحاضرة 13", link: "https://youtu.be/sG5NNBpejUk" },
+      { name: "المحاضرة 14", link: "https://youtu.be/YXifjsxtx-Q?si=oBBPuGgwCKy7-cMe" },
+      { name: "المحاضرة 15", link: "https://youtu.be/DNcmOd2P-_0?si=T7ybUMWUba_PKpaR" },
+      { name: "المحاضرة 16", link: "https://youtu.be/uBGD7vDxCEI?si=IZCTsMvBUlyx9f2i" },
+      { name: "المحاضرة 17", link: "https://youtu.be/QGHPhTtSFUY" },
+      { name: "المحاضرة 18", link: "https://youtu.be/MAyTWTOFh7M?si=g6YJg6rImvYr3gI5" },
+      { name: "المحاضرة 19", link: "https://youtu.be/gkd5RCYYWqw?si=tGpTPzKJ4_zAkD4O" },
+      { name: "المحاضرة 20", link: "https://youtu.be/g6W_IGb4YCU" },
+      { name: "المحاضرة 21", link: "https://youtu.be/JWEFOyL-vmw?si=bW-Ks8jcfObdCblf" },
+      { name: "المحاضرة 22", link: "https://youtu.be/NT5ESNcONmM" },
+      { name: "المحاضرة 23", link: "https://youtu.be/zmiaWX_MaC0" },
+      { name: "المحاضرة 24", link: "https://youtu.be/jm3fQE6bbFw" }
+    ]
+  },
+  fundamentals1: {
+    title: "أساسيات التمريض (1) نظري",
+    subtitle: "حركة الشبيبة الفتحاوية - سلسلة الأساسيات المتميزة",
+    lectures: [
+      { name: "المحاضرة الأولى", link: "https://www.youtube.com/watch?v=IdseGSACtto" },
+      { name: "المحاضرة الثانية", link: "https://www.youtube.com/watch?v=3bP-83QXeYk" },
+      { name: "المحاضرة الثالثة - الجزء الأول", link: "https://www.youtube.com/watch?v=BMQapaM6Qn8" },
+      { name: "المحاضرة الثالثة - الجزء الثاني", link: "https://www.youtube.com/watch?v=lWopZAL_N5g" },
+      { name: "المحاضرة الثالثة - الجزء الثالث", link: "https://www.youtube.com/watch?v=H9oQcuxyCvc" },
+      { name: "المحاضرة الرابعة - الجزء الأول", link: "https://www.youtube.com/watch?v=mbA5ZqDkUM8" },
+      { name: "المحاضرة الرابعة - الجزء الثاني", link: "https://www.youtube.com/watch?v=R0Hty0smcKg" },
+      { name: "المحاضرة الخامسة - الجزء الأول", link: "https://www.youtube.com/watch?v=fA8ZGRaYVWM" },
+      { name: "المحاضرة الخامسة - الجزء الثاني", link: "https://www.youtube.com/watch?v=skvGEoL7fHw" },
+      { name: "المحاضرة السادسة - الجزء الأول", link: "https://www.youtube.com/watch?v=OhCsBnJZ5e0" },
+      { name: "المحاضرة السادسة - الجزء الثاني", link: "https://www.youtube.com/watch?v=UjRq4SIbOX4" },
+      { name: "المحاضرة السادسة - الجزء الثالث", link: "https://www.youtube.com/watch?v=KacSoLLXO6g" },
+      { name: "المحاضرة السادسة - الجزء الرابع", link: "https://www.youtube.com/watch?v=pQA5XKLTq4I" },
+      { name: "المحاضرة السابعة - الجزء الأول", link: "https://www.youtube.com/watch?v=viVhsLTP_Xs" },
+      { name: "المحاضرة السابعة - الجزء الثاني", link: "https://www.youtube.com/watch?v=ltH-Aqm34cA" },
+      { name: "المحاضرة السابعة - الجزء الثالث", link: "https://www.youtube.com/watch?v=kGUq6fLM92k" },
+      { name: "المحاضرة الثامنة - الجزء الأول", link: "https://www.youtube.com/watch?v=damxSZHte84" },
+      { name: "المحاضرة الثامنة - الجزء الثاني", link: "https://www.youtube.com/watch?v=FbRryjgr9x8" },
+      { name: "المحاضرة الثامنة - الجزء الثالث", link: "https://www.youtube.com/watch?v=rUZLUOFgQbY" }
+    ]
+  },
+  ethics: {
+    title: "أخلاقيات مهنة التمريض",
+    subtitle: "حركة الشبيبة الفتحاوية - محاضرات أخلاقيات المهنة",
+    lectures: [
+      { name: "المحاضرة الأولى", link: "https://youtu.be/BO5a549QoV4?si=lG5dZ9TBPcH6iwSK" },
+      { name: "المحاضرة الثانية", link: "https://youtu.be/7uyXjPW-Vkc?si=DaAWl3X4fOLzEO7M" },
+      { name: "المحاضرة الثالثة", link: "https://youtu.be/tEcg0Li6F2g" },
+      { name: "المحاضرة الرابعة", link: "https://youtu.be/XFXSp2-mUqY" },
+      { name: "المحاضرة الخامسة", link: "https://youtu.be/02BxJrz7FSg" },
+      { name: "المحاضرة السادسة", link: "https://youtu.be/Nxz0oWC62ew" },
+      { name: "المحاضرة السابعة", link: "https://youtu.be/E-2Mshz0y_A" },
+      { name: "المحاضرة الثامنة", link: "https://youtu.be/-1AdG0XA0bQ" },
+      { name: "المحاضرة التاسعة", link: "https://youtu.be/NwWVubnl2GI" },
+      { name: "المحاضرة العاشرة", link: "https://youtu.be/M7MKD6Zeqj0" },
+      { name: "المحاضرة 11", link: "https://youtu.be/QKTtMUN6PGM?si=kYaDww5lZMJmwyja" },
+      { name: "المحاضرة 12", link: "https://youtu.be/r3q_U2jWzKI?si=CQW_ZH1emw5g9P6w" }
+    ]
+  },
+  dosage: {
+    title: "علم حساب الجرعة العلاجية",
+    subtitle: "حركة الشبيبة الفتحاوية - لجنة العلوم الطبية التطبيقية",
+    lectures: [
+      { name: "المحاضرة الأولى (ملف درايف)", link: "https://drive.google.com/file/d/1Y5UGIApLmA7-JruAX6H9LR3UawryrlmH/view?usp=drivesdk" },
+      { name: "المحاضرة الثانية", link: "https://youtu.be/2olNBj-5gMQ" },
+      { name: "المحاضرة الثالثة (جزء 1)", link: "https://drive.google.com/file/d/1vS_n79H4ht9_EpBGFK6imSBPzZIRusox/view?usp=sharing" },
+      { name: "المحاضرة الثالثة (جزء 2)", link: "https://drive.google.com/file/d/12SZAq10bvXPrVAIaC_G6RslSn9HYZNo8/view?usp=sharing" },
+      { name: "المحاضرة الرابعة", link: "https://youtu.be/r0faCuh11-E" },
+      { name: "المحاضرة الخامسة (ملف درايف)", link: "https://drive.google.com/file/d/1K7wwjeKRlT_aOFb7X-yxvSbgEdnLJL9x/view?usp=sharing" },
+      { name: "المحاضرة السادسة (ملف درايف)", link: "https://drive.google.com/file/d/1eSRfdMYVcd48TLyvcNwyZyuVe9_T9HPu/view?usp=sharing" },
+      { name: "المحاضرة السابعة", link: "https://youtu.be/xNhhvBM9JjQ" },
+      { name: "المحاضرة الثامنة", link: "https://youtu.be/YDXD9jQFYqc" },
+      { name: "المحاضرة التاسعة", link: "https://youtu.be/hn6r_YkdbF0" },
+      { name: "المحاضرة العاشرة", link: "https://youtu.be/H8iOzCMkqxc" },
+      { name: "المحاضرة 11", link: "https://youtu.be/LL3Ml1VYW9Q" },
+      { name: "المحاضرة 12", link: "https://youtu.be/6X6P0Ja6tNE" },
+      { name: "المحاضرة 13", link: "https://youtu.be/myVCEqkiy2Y" },
+      { name: "المحاضرة 14", link: "https://youtu.be/piQvZAqCejw" },
+      { name: "المحاضرة 15 (جزء 1)", link: "https://youtu.be/G7qLLFJh61Q" },
+      { name: "المحاضرة 15 (جزء 2)", link: "https://youtu.be/8xSNgu29Fg8" },
+      { name: "المحاضرة 16", link: "https://youtu.be/JM8aWzpiZBE" },
+      { name: "المحاضرة 17", link: "https://youtu.be/qQg12Q1Z1C4" },
+      { name: "المحاضرة 18", link: "https://youtu.be/_LwZtFgPJZg" },
+      { name: "المحاضرة 19", link: "https://youtu.be/Gj3zbo97gYc" },
+      { name: "المحاضرة 20", link: "https://youtu.be/nXXcSlzxUAE" },
+      { name: "المحاضرة 21", link: "https://youtu.be/CJnN7VvRFDo" },
+      { name: "المحاضرة 22", link: "https://youtu.be/-Wka_rBKBMM" },
+      { name: "المحاضرة 23", link: "https://youtu.be/lAuWbJia9R4" },
+      { name: "المحاضرة 24", link: "https://youtu.be/TmWchr6oqu0" }
+    ]
+  }
+};
+
 let courseCounter=0;
 document.querySelectorAll('.subject-list .subject').forEach(el=>{
   if(el.tagName==='BUTTON') return;
@@ -153,6 +290,30 @@ function hideResourceChoices(){
   showLectures.parentElement.hidden=false;
   showSlides.parentElement.hidden=false;
 }
+
+function renderCustomLectures(courseKey) {
+  const data = coursesData[courseKey];
+  if (!data) return false;
+  
+  let html = `<div class="lecture-heading"><h3>${data.title}</h3><span class="pill">${data.lectures.length} عنصر</span></div>`;
+  html += `<div class="lecture-list">`;
+  
+  data.lectures.forEach((item) => {
+    const isDrive = item.link.includes('drive.google.com');
+    const actionText = isDrive ? 'فتح / تحميل الملف ↗' : 'مشاهدة الفيديو ↗';
+    html += `
+      <article class="lecture-topic">
+        <h4>${item.name}</h4>
+        <a href="${item.link}" target="_blank" rel="noopener">${item.name} <span>${actionText}</span></a>
+      </article>
+    `;
+  });
+  
+  html += `</div>`;
+  customLecturesContainer.innerHTML = html;
+  return true;
+}
+
 function showCoursePage(page, updateHistory=true){
   document.body.classList.add('course-page-mode');
   courseResources.hidden=false;
@@ -160,9 +321,19 @@ function showCoursePage(page, updateHistory=true){
   showSlides.parentElement.hidden=(page!=='options');
   lectureContent.hidden=(page!=='lectures');
   slidesContent.hidden=(page!=='slides');
-  const hasSurgeryLectures=activeCourseId==='surgery2';
-  surgeryOnlyLectures.hidden=!hasSurgeryLectures;
-  lecturesPlaceholder.hidden=hasSurgeryLectures;
+  
+  const hasSurgery = activeCourseId==='surgery2';
+  const hasCustom = renderCustomLectures(activeCourseId);
+  
+  surgeryOnlyLectures.hidden = !hasSurgery;
+  if (hasCustom) {
+    customLecturesContainer.hidden = false;
+    lecturesPlaceholder.hidden = true;
+  } else {
+    customLecturesContainer.hidden = true;
+    lecturesPlaceholder.hidden = hasSurgery;
+  }
+  
   slidesTitle.textContent='سلايدات '+activeCourseName;
   slidesMessage.textContent=activeCourseId==='surgery2'
     ? 'سلايدات تمريض جراحة باطنة (2) نظري لم تُضف بعد. أرسل ملفات PDF أو PowerPoint أو روابطها حتى نضيفها هنا.'
@@ -173,14 +344,24 @@ function showCoursePage(page, updateHistory=true){
     history.pushState({coursePage:page,courseId:activeCourseId,courseName:activeCourseName},'', '#'+activeCourseId+suffix);
   }
 }
+
 function openCourse(button){
   activeCourseId=button.dataset.course || 'course-unknown';
   activeCourseName=button.childNodes.length ? button.textContent.trim().replace(/↗/g,'').trim() : 'المادة الدراسية';
   courseTitle.textContent=activeCourseName;
-  courseSubtitle.textContent=activeCourseId==='surgery2'?'د. يوسف خليفة — اختر القسم الذي تريد فتحه.':'اختر المحاضرات أو السلايدات الخاصة بهذه المادة.';
+  
+  if (coursesData[activeCourseId]) {
+    courseSubtitle.textContent = coursesData[activeCourseId].subtitle;
+  } else if (activeCourseId==='surgery2') {
+    courseSubtitle.textContent = 'د. يوسف خليفة — اختر القسم الذي تريد فتحه.';
+  } else {
+    courseSubtitle.textContent = 'اختر المحاضرات أو السلايدات الخاصة بهذه المادة.';
+  }
+  
   hideResourceChoices();
   showCoursePage('options');
 }
+
 document.querySelectorAll('.subject-list [data-course]').forEach(button=>button.addEventListener('click',()=>openCourse(button)));
 showLectures.addEventListener('click',()=>showCoursePage('lectures'));
 showSlides.addEventListener('click',()=>showCoursePage('slides'));
@@ -203,7 +384,15 @@ window.addEventListener('popstate',()=>{
     activeCourseId=match[1];
     activeCourseName=button.textContent.trim().replace(/↗/g,'').trim();
     courseTitle.textContent=activeCourseName;
-    courseSubtitle.textContent=activeCourseId==='surgery2'?'د. يوسف خليفة — اختر القسم الذي تريد فتحه.':'اختر المحاضرات أو السلايدات الخاصة بهذه المادة.';
+    
+    if (coursesData[activeCourseId]) {
+      courseSubtitle.textContent = coursesData[activeCourseId].subtitle;
+    } else if (activeCourseId==='surgery2') {
+      courseSubtitle.textContent = 'د. يوسف خليفة — اختر القسم الذي تريد فتحه.';
+    } else {
+      courseSubtitle.textContent = 'اختر المحاضرات أو السلايدات الخاصة بهذه المادة.';
+    }
+    
     showCoursePage(match[2]==='-lectures'?'lectures':match[2]==='-slides'?'slides':'options',false);
   }else if(document.body.classList.contains('course-page-mode')){
     document.body.classList.remove('course-page-mode');
