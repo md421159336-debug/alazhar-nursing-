@@ -51,19 +51,29 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
 <details class="year" data-searchable><summary>السنة الرابعة</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject" data-searchable>فلسطين الأرض والإنسان</span><button type="button" class="subject subject-button" data-course="theories" data-searchable aria-haspopup="true">النظريات التمريضية ↗</button><button type="button" class="subject subject-button" data-course="research" data-searchable aria-haspopup="true">مناهج البحث العلمي للتمريض ↗</button><button type="button" class="subject subject-button" data-course="epidemiology" data-searchable aria-haspopup="true">الصحة العامة وعلم الوبائيات ↗</button><span class="subject" data-searchable>تمريض النساء والولادة نظري</span><span class="subject" data-searchable>تمريض النساء والولادة عملي</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject" data-searchable>قرآن كريم (4)</span><span class="subject" data-searchable>علوم البيئة</span><button type="button" class="subject subject-button" data-course="radiology" data-searchable aria-haspopup="true">مدخل لعلوم الأشعة ↗</button><button type="button" class="subject subject-button" data-course="critical_care" data-searchable aria-haspopup="true">تمريض العناية المكثفة / نظري ↗</button><span class="subject" data-searchable>تمريض العناية المكثفة / عملي</span><button type="button" class="subject subject-button" data-course="community_health" data-searchable aria-haspopup="true">تمريض صحة المجتمع نظري ↗</button><span class="subject" data-searchable>تمريض صحة المجتمع عملي</span><button type="button" class="subject subject-button" data-course="management" data-searchable aria-haspopup="true">الإدارة والقيادة في التمريض / النظري ↗</button><span class="subject" data-searchable>الإدارة والقيادة في التمريض / عملي</span><span class="subject" data-searchable>تدريب امتياز</span></div></div></div></details>
 </div></section>
 
+<!-- صفحة المادة التفاعلية -->
 <section id="courseResources" class="course-resources" hidden aria-live="polite">
-  <button type="button" class="page-back" id="closeCourse">← العودة إلى المكتبة</button><div class="section-head"><div><h2 id="courseTitle">تمريض جراحة باطنة (2) نظري</h2><p id="courseSubtitle">اختر القسم الذي تريد فتحه.</p></div></div>
-  <div class="resource-options">
+  <button type="button" class="page-back" id="closeCourse">← العودة إلى المكتبة</button>
+  <div class="section-head">
+    <div>
+      <h2 id="courseTitle">تمريض جراحة باطنة (2) نظري</h2>
+      <p id="courseSubtitle">اختر القسم الذي تريد فتحه.</p>
+    </div>
+  </div>
+  <div class="resource-options" id="resourceOptions">
     <button type="button" class="resource-option" id="showLectures"><span class="resource-emoji">🎥</span><strong>المحاضرات</strong><small>فيديوهات المحاضرات مقسّمة حسب الموضوع</small></button>
     <button type="button" class="resource-option" id="showSlides"><span class="resource-emoji">📑</span><strong>السلايدات</strong><small>ملفات العرض التقديمي للمادة</small></button>
   </div>
   <div id="lectureContent" class="lecture-content" hidden>
     <button type="button" class="page-back" id="backToOptionsLectures">← العودة إلى خيارات المادة</button>
     <div id="customLecturesContainer"></div>
-    <div id="surgeryOnlyLectures" class="surgery-only" hidden></div>
-    <div id="lecturesPlaceholder" class="empty-resource" hidden><span>🎥</span><h3>محاضرات المادة</h3><p>لم تتم إضافة روابط المحاضرات لهذه المادة بعد. يمكن إضافتها لاحقًا دون تغيير تصميم المكتبة.</p></div>
+    <div id="lecturesPlaceholder" class="empty-resource" hidden><span>🎥</span><h3>محاضرات المادة</h3><p>لم تتم إضافة روابط المحاضرات لهذه المادة بعد.</p></div>
   </div>
-  <div id="slidesContent" class="empty-resource" hidden><button type="button" class="page-back" id="backToOptionsSlides">← العودة إلى خيارات المادة</button><br><span>📑</span><h3 id="slidesTitle">السلايدات</h3><p id="slidesMessage">لم تتم إضافة سلايدات هذه المادة بعد. أرسل ملفات PDF أو PowerPoint أو روابطها حتى نضيفها هنا.</p></div>
+  <div id="slidesContent" class="empty-resource" hidden>
+    <button type="button" class="page-back" id="backToOptionsSlides">← العودة إلى خيارات المادة</button><br>
+    <span>📑</span><h3 id="slidesTitle">السلايدات</h3>
+    <p id="slidesMessage">لم تتم إضافة سلايدات هذه المادة بعد.</p>
+  </div>
 </section>
 
 <!-- قسم الممثلين -->
@@ -76,7 +86,6 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
   <span class="pill">إدارة وممثلون</span>
 </div>
 <div class="grid">
-  <!-- منسق الكلية -->
   <article class="card rep-main-card" data-searchable>
     <div class="rep-info">
       <h3>منسق كلية العلوم الطبية التطبيقية</h3>
@@ -85,7 +94,6 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
     <a href="https://wa.me/970598441896" target="_blank" class="whatsapp-btn">+970 598 441 896 💬</a>
   </article>
 
-  <!-- ممثل قسم التمريض -->
   <article class="card rep-card" data-searchable>
     <div class="rep-info">
       <h3>ممثل قسم التمريض</h3>
@@ -94,7 +102,6 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
     <a href="https://wa.me/972592185211" target="_blank" class="whatsapp-btn">+972 59-218-5211 💬</a>
   </article>
 
-  <!-- ممثلو المستوى الرابع -->
   <article class="card rep-card" data-searchable>
     <div class="rep-info">
       <h3>ممثلو المستوى الرابع</h3>
@@ -107,7 +114,6 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
     </div>
   </article>
 
-  <!-- ممثلو المستوى الثالث -->
   <article class="card rep-card" data-searchable>
     <div class="rep-info">
       <h3>ممثلو المستوى الثالث</h3>
@@ -118,7 +124,6 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
     </div>
   </article>
 
-  <!-- ممثلو المستوى الثاني -->
   <article class="card rep-card" data-searchable>
     <div class="rep-info">
       <h3>ممثلو المستوى الثاني</h3>
@@ -178,6 +183,7 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
 </section>
 <div class="notice">ملاحظة: أسماء المواد وتوزيعها هنا كما أُرسلت في الكود. يُفضّل مطابقتها مع ملف الخطة الرسمية قبل اعتمادها نهائيًا.</div>
 </main><footer><div class="wrap"><strong>مكتبة التمريض | جامعة الأزهر – غزة</strong><p>العلم رسالة، والتمريض إنسانية.</p><p class="footer-note">مبادرة طلابية لتنظيم الموارد الأكاديمية — ليست موقعًا رسميًا للجامعة.</p></div></footer>
+
 <script>
 const searchForm = document.getElementById('searchForm');
 const searchInput = document.getElementById('searchInput');
@@ -240,10 +246,12 @@ departmentToggle.addEventListener('click', e => {
   if (opening) departmentSection.scrollIntoView({behavior:'smooth', block:'start'});
 });
 
+// إعدادات صفحة المواد التفصيلية
 const courseResources = document.getElementById('courseResources');
 const closeCourse = document.getElementById('closeCourse');
 const showLectures = document.getElementById('showLectures');
 const showSlides = document.getElementById('showSlides');
+const resourceOptions = document.getElementById('resourceOptions');
 const lectureContent = document.getElementById('lectureContent');
 const slidesContent = document.getElementById('slidesContent');
 const courseTitle = document.getElementById('courseTitle');
@@ -252,6 +260,9 @@ const customLecturesContainer = document.getElementById('customLecturesContainer
 const lecturesPlaceholder = document.getElementById('lecturesPlaceholder');
 const slidesTitle = document.getElementById('slidesTitle');
 const slidesMessage = document.getElementById('slidesMessage');
+
+let activeCourseId = 'surgery2';
+let activeCourseName = 'تمريض جراحة باطنة (2) نظري';
 
 const coursesData = {
   patho: {
@@ -506,6 +517,7 @@ const coursesData = {
   }
 };
 
+// ربط أزرار المواد بصفحة المادة
 const subjectButtons = document.querySelectorAll('.subject-button');
 subjectButtons.forEach(btn => {
   btn.addEventListener('click', () => {
@@ -519,22 +531,28 @@ subjectButtons.forEach(btn => {
     courseTitle.textContent = courseObj.title;
     courseSubtitle.textContent = courseObj.subtitle;
 
-    document.querySelectorAll('main > .wrap > :not(#courseResources)').forEach(el => el.style.display = 'none');
+    // إخفاء الواجهة الرئيسية وإظهار واجهة صفحة المادة
+    document.querySelectorAll('.main-section').forEach(sec => sec.style.display = 'none');
     document.querySelector('.quicklinks').style.display = 'none';
+    
     courseResources.hidden = false;
+    resourceOptions.style.display = 'grid';
     lectureContent.hidden = true;
     slidesContent.hidden = true;
+    
     window.scrollTo({top: 0, behavior: 'smooth'});
   });
 });
 
+// العودة من المادة إلى الصفحة الرئيسية
 closeCourse.addEventListener('click', () => {
   courseResources.hidden = true;
   document.querySelector('.quicklinks').style.display = 'grid';
-  document.querySelectorAll('main > .wrap > .main-section').forEach(sec => sec.style.display = 'none');
+  document.querySelectorAll('.main-section').forEach(sec => sec.style.display = 'none');
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
 
+// إظهار المحاضرات
 showLectures.addEventListener('click', () => {
   resourceOptions.style.display = 'none';
   lectureContent.hidden = false;
@@ -555,6 +573,7 @@ showLectures.addEventListener('click', () => {
   }
 });
 
+// إظهار السلايدات
 showSlides.addEventListener('click', () => {
   resourceOptions.style.display = 'none';
   slidesContent.hidden = false;
@@ -562,12 +581,14 @@ showSlides.addEventListener('click', () => {
   slidesMessage.textContent = "لم تتم إضافة سلايدات هذه المادة بعد. أرسل ملفات PDF أو PowerPoint أو روابطها حتى نضيفها هنا.";
 });
 
+// العودة من المحاضرات إلى خيارات المادة
 const backToOptionsLectures = document.getElementById('backToOptionsLectures');
 backToOptionsLectures.addEventListener('click', () => {
   lectureContent.hidden = true;
   resourceOptions.style.display = 'grid';
 });
 
+// العودة من السلايدات إلى خيارات المادة
 const backToOptionsSlides = document.getElementById('backToOptionsSlides');
 backToOptionsSlides.addEventListener('click', () => {
   slidesContent.hidden = true;
