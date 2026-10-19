@@ -14,9 +14,9 @@ header{background:linear-gradient(125deg,var(--navy),#1d536d);color:white;paddin
 main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-48px;position:relative;z-index:2}.quick{display:block;width:100%;text-align:right;font:inherit;color:inherit;cursor:pointer;background:#edf4f8;border:1px solid #b9d4df;border-radius:17px;padding:18px;box-shadow:var(--shadow);transition:.2s}.quick[aria-expanded="true"]{background:white;border-color:var(--line)}.quick-toggle:focus-visible{outline:3px solid var(--teal);outline-offset:3px}.quick:hover,.card:hover{transform:translateY(-3px)}.quick .ico{font-size:24px}.quick h3{font-size:15px;margin:8px 0 2px}.quick p{font-size:11px;color:var(--muted);margin:0}section{scroll-margin-top:20px;margin-top:42px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:17px}.section-head h2{margin:0;font-size:24px;color:var(--navy)}.section-head p{margin:4px 0 0;color:var(--muted);font-size:14px}.pill{font-size:12px;color:var(--navy2);background:#e3f4f1;padding:6px 11px;border-radius:99px;white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:white;border:1px solid var(--line);border-radius:17px;padding:20px;box-shadow:var(--shadow);transition:.2s}.card h3{margin:0 0 7px;font-size:18px;color:var(--navy)}.card p{margin:0 0 15px;color:var(--muted);font-size:13px}.card .action{display:inline-flex;align-items:center;gap:7px;color:var(--navy2);font-size:13px;font-weight:bold;background:#edf4f8;padding:8px 12px;border-radius:99px}.year{border:1px solid var(--line);border-radius:15px;background:white;margin-bottom:10px;overflow:hidden}.year summary{cursor:pointer;padding:16px 19px;font-weight:bold;color:var(--navy);display:flex;justify-content:space-between;gap:10px;list-style:none}.year summary::-webkit-details-marker{display:none}.year summary:after{content:"＋";color:var(--teal)}.year[open] summary:after{content:"−"}.year-content{padding:0 19px 18px}.semester{background:#f5f8fa;border-radius:12px;padding:13px;margin-top:10px}.semester h4{margin:0 0 9px;color:var(--navy2)}.subject-list{display:flex;flex-wrap:wrap;gap:8px}.subject{font-size:13px;border:1px solid #dbe5eb;border-radius:8px;background:white;padding:7px 10px;color:#465c6b;font-weight:500}.links-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.link-row{display:flex;align-items:center;gap:13px;background:white;border:1px solid var(--line);border-radius:14px;padding:15px}.link-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:#e7f4f1;font-size:21px;flex-shrink:0}.link-row strong{display:block;color:var(--navy)}.link-row small{color:var(--muted)}.link-row .go{margin-right:auto;color:var(--teal);font-weight:bold}.notice{margin-top:22px;background:#fff8e8;border:1px solid #f4dfad;color:#74551a;border-radius:13px;padding:13px 16px;font-size:13px}footer{background:#0b2335;color:#d8e5ed;padding:28px 0;text-align:center;font-size:13px}footer strong{color:white}footer p{margin:5px 0}.footer-note{color:#9eb6c5;font-size:12px}
 
 /* تنسيقات كروت الممثلين */
-.rep-main-card{background:linear-gradient(135deg,var(--navy),var(--navy2));color:white;grid-column:1/-1;border:none}
-.rep-main-card h3{color:var(--gold);font-size:20px}
-.rep-main-card p{color:#dce8ef;font-size:16px;margin-bottom:15px}
+.rep-main-card{background:#e8f4f8;border:1px solid #bce0ed;grid-column:1/-1}
+.rep-main-card h3{color:var(--navy);font-size:18px}
+.rep-main-card p{color:var(--ink);font-size:15px;margin-bottom:12px}
 .rep-card{display:flex;flex-direction:column;justify-content:space-between}
 .rep-info{margin-bottom:14px}
 .rep-info h3{font-size:16px;color:var(--navy2);margin-bottom:8px}
@@ -34,20 +34,21 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
 <header><div class="wrap"><div class="brand"><div class="logo" aria-hidden="true">✚</div><div><h1>مكتبة التمريض</h1><p>Nursing Library · Al-Azhar University – Gaza</p></div></div><div class="hero"><div class="eyebrow">منكم، ومعكم، ولأجلكم..</div><h2>منكم، ومعكم، ولأجلكم..</h2><div class="intro-copy">
 <p>أنشأ الطالبان محمد الدهشان وأحمد أبو وردة هذه المكتبة لتجمع مواد التمريض وخططه وروابطه في مكان واحد، امتدادًا لرسالة حركة الشبيبة الفتحاوية في خدمة الطلبة ودعم تميزهم.</p>
 <p class="intro-signature">كلية العلوم الطبية التطبيقية – قسم التمريض | حركة الشبيبة الفتحاوية</p>
-</div><form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="ابحث عن مادة، سنة دراسية أو رابط..." aria-label="ابحث في المكتبة"><button type="submit">بحث</button></form></div></div></header>
+</div><form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="ابحث عن مادة، سنة دراسية أو اسم ممثل..." aria-label="ابحث في المكتبة"><button type="submit">بحث</button></form></div></div></header>
 <main class="wrap">
 <div class="quicklinks">
 <button type="button" class="quick quick-toggle" data-target="plan" aria-expanded="false"><div class="ico">🗓️</div><h3>الخطة الدراسية</h3><p>المستويات والفصول الدراسية</p></button>
-<button type="button" class="quick quick-toggle" data-target="representatives" aria-expanded="false"><div class="ico">🎓</div><h3>الممثلون والمندوبون</h3><p>ممثل الكلية وممثلو المستويات</p></button>
+<button type="button" class="quick quick-toggle" data-target="representatives" aria-expanded="false"><div class="ico">🎓</div><h3>الممثلون</h3><p>منسق الكلية وممثلو المستويات</p></button>
 <button type="button" class="quick quick-toggle" data-target="groups" aria-expanded="false"><div class="ico">👥</div><h3>القروبات الطلابية</h3><p>تواصل مع زملائك والدفعات</p></button>
 <button type="button" class="quick quick-toggle" data-target="links" aria-expanded="false"><div class="ico">🔗</div><h3>روابط مهمة</h3><p>المنصات الجامعية والبوتات</p></button>
 </div>
 
-<section id="plan" style="display:none;" data-searchable><div class="section-head"><div><h2>الخطة الدراسية (خطة التمريض)</h2><p>تفاصيل مواد السنوات الأربع والفصول الدراسية حسب القائمة المضافة.</p><a href="./Plan-nursing.pdf" target="_blank" class="download-btn">📄 عرض / تحميل خطة التمريض (PDF)</a></div><span class="pill">المستويات الأربعة</span></div><div id="planList">
-<details class="year" data-searchable><summary>السنة الأولى</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject">قرآن كريم (1)</span><span class="subject">اللغة العربية (1)</span><span class="subject">اللغة الإنجليزية (1)</span><span class="subject">تشريح وعلم وظائف الأعضاء (1)</span><span class="subject">مفردات طبية</span><span class="subject">بيولوجيا عامة</span><span class="subject">كيمياء للعلوم الصحية</span><span class="subject">الإسعافات الأولية</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject">دراسات في الفقه</span><span class="subject">تشريح وعلم وظائف الأعضاء (2)</span><span class="subject">رياضيات للعلوم الصحية</span><span class="subject">فيزياء للعلوم الصحية</span><span class="subject">كيمياء حيوية (1)</span><span class="subject">مبادئ الصحة النفسية</span></div></div></div></details>
-<details class="year" data-searchable><summary>السنة الثانية</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject">دراسات في الحديث وعلومه</span><span class="subject">دراسات في العقيدة الإسلامية</span><button type="button" class="subject subject-button" data-course="ethics" aria-haspopup="true">أخلاقيات مهنة التمريض ↗</button><button type="button" class="subject subject-button" data-course="fundamentals1" aria-haspopup="true">أساسيات التمريض (1) نظري ↗</button><span class="subject">أساسيات تمريض (1) عملي</span><button type="button" class="subject subject-button" data-course="pharma" aria-haspopup="true">علم الأدوية ↗</button><button type="button" class="subject subject-button" data-course="patho" aria-haspopup="true">علم الأمراض ↗</button><button type="button" class="subject subject-button" data-course="dosage" aria-haspopup="true">علم حساب الجرعة العلاجية ↗</button></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject">قرآن كريم (2)</span><button type="button" class="subject subject-button" data-course="fundamentals2" aria-haspopup="true">أساسيات التمريض (2) نظري ↗</button><button type="button" class="subject subject-button" data-course="fundamentals2_practical" aria-haspopup="true">أساسيات التمريض (2) عملي ↗</button><button type="button" class="subject subject-button" data-course="health_assessment" aria-haspopup="true">التقييم الصحي السريري للمريض ↗</button><button type="button" class="subject subject-button" data-course="surgery1" aria-haspopup="true">تمريض جراحة باطنة (1) نظري ↗</button><span class="subject">تمريض جراحة باطنة (1) عملي</span></div></div><div class="semester"><h4>الفصل الصيفي</h4><div class="subject-list"><span class="subject">تدريب اكلينيكي</span></div></div></div></details>
-<details class="year" data-searchable><summary>السنة الثالثة</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject">قرآن كريم (3)</span><span class="subject">علم النمو والتطور للإنسان</span><button type="button" class="subject subject-button" data-course="surgery2" aria-haspopup="true">تمريض جراحة باطنة (2) نظري <span aria-hidden="true">↗</span></button><span class="subject">تمريض جراحة باطنة (2) عملي</span><button type="button" class="subject subject-button" data-course="pediatrics" aria-haspopup="true">تمريض أطفال وحديثي الولادة نظري ↗</button><span class="subject">تمريض أطفال وحديثي الولادة عملي</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject">دراسات في التفسير وعلوم القرآن</span><button type="button" class="subject subject-button" data-course="nutrition" aria-haspopup="true">علم التغذية ↗</button><button type="button" class="subject subject-button" data-course="microbiology" aria-haspopup="true">علم الأحياء الدقيقة ↗</button><button type="button" class="subject subject-button" data-course="surgery3" aria-haspopup="true">تمريض جراحة باطنه (3) - Gerontology نظري ↗</button><span class="subject">تمريض جراحة باطنه (3) - Gerontology عملي</span><button type="button" class="subject subject-button" data-course="psychiatric" aria-haspopup="true">تمريض الصحة النفسية / نظري ↗</button><span class="subject">تمريض الصحة النفسية / عملي</span></div></div></div></details>
-<details class="year" data-searchable><summary>السنة الرابعة</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject">فلسطين الأرض والإنسان</span><span class="subject">النظريات التمريضية</span><span class="subject">مناهج البحث العلمي للتمريض</span><span class="subject">الصحة العامة وعلم الوبائيات</span><span class="subject">تمريض النساء والولادة نظري</span><span class="subject">تمريض النساء والولادة عملي</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject">قرآن كريم (4)</span><span class="subject">علوم البيئة</span><span class="subject">مدخل لعلوم الأشعة</span><span class="subject">تمريض العناية المكثفة / نظري</span><span class="subject">تمريض العناية المكثفة / عملي</span><span class="subject">تمريض صحة المجتمع نظري</span><span class="subject">تمريض صحة المجتمع عملي</span><span class="subject">الإدارة والقيادة في التمريض / النظري</span><span class="subject">الإدارة والقيادة في التمريض / عملي</span><span class="subject">تدريب امتياز</span></div></div></div></details>
+<section id="plan" style="display:none;" class="main-section">
+<div class="section-head"><div><h2>الخطة الدراسية (خطة التمريض)</h2><p>تفاصيل مواد السنوات الأربع والفصول الدراسية حسب القائمة المضافة.</p><a href="./Plan-nursing.pdf" target="_blank" class="download-btn">📄 عرض / تحميل خطة التمريض (PDF)</a></div><span class="pill">المستويات الأربعة</span></div><div id="planList">
+<details class="year" data-searchable><summary>السنة الأولى</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject" data-searchable>قرآن كريم (1)</span><span class="subject" data-searchable>اللغة العربية (1)</span><span class="subject" data-searchable>اللغة الإنجليزية (1)</span><span class="subject" data-searchable>تشريح وعلم وظائف الأعضاء (1)</span><span class="subject" data-searchable>مفردات طبية</span><span class="subject" data-searchable>بيولوجيا عامة</span><span class="subject" data-searchable>كيمياء للعلوم الصحية</span><span class="subject" data-searchable>الإسعافات الأولية</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject" data-searchable>دراسات في الفقه</span><span class="subject" data-searchable>تشريح وعلم وظائف الأعضاء (2)</span><span class="subject" data-searchable>رياضيات للعلوم الصحية</span><span class="subject" data-searchable>فيزياء للعلوم الصحية</span><span class="subject" data-searchable>كيمياء حيوية (1)</span><span class="subject" data-searchable>مبادئ الصحة النفسية</span></div></div></div></details>
+<details class="year" data-searchable><summary>السنة الثانية</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject" data-searchable>دراسات في الحديث وعلومه</span><span class="subject" data-searchable>دراسات في العقيدة الإسلامية</span><button type="button" class="subject subject-button" data-course="ethics" data-searchable aria-haspopup="true">أخلاقيات مهنة التمريض ↗</button><button type="button" class="subject subject-button" data-course="fundamentals1" data-searchable aria-haspopup="true">أساسيات التمريض (1) نظري ↗</button><span class="subject" data-searchable>أساسيات تمريض (1) عملي</span><button type="button" class="subject subject-button" data-course="pharma" data-searchable aria-haspopup="true">علم الأدوية ↗</button><button type="button" class="subject subject-button" data-course="patho" data-searchable aria-haspopup="true">علم الأمراض ↗</button><button type="button" class="subject subject-button" data-course="dosage" data-searchable aria-haspopup="true">علم حساب الجرعة العلاجية ↗</button></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject" data-searchable>قرآن كريم (2)</span><button type="button" class="subject subject-button" data-course="fundamentals2" data-searchable aria-haspopup="true">أساسيات التمريض (2) نظري ↗</button><button type="button" class="subject subject-button" data-course="fundamentals2_practical" data-searchable aria-haspopup="true">أساسيات التمريض (2) عملي ↗</button><button type="button" class="subject subject-button" data-course="health_assessment" data-searchable aria-haspopup="true">التقييم الصحي السريري للمريض ↗</button><button type="button" class="subject subject-button" data-course="surgery1" data-searchable aria-haspopup="true">تمريض جراحة باطنة (1) نظري ↗</button><span class="subject" data-searchable>تمريض جراحة باطنة (1) عملي</span></div></div><div class="semester"><h4>الفصل الصيفي</h4><div class="subject-list"><span class="subject" data-searchable>تدريب اكلينيكي</span></div></div></div></details>
+<details class="year" data-searchable><summary>السنة الثالثة</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject" data-searchable>قرآن كريم (3)</span><span class="subject" data-searchable>علم النمو والتطور للإنسان</span><button type="button" class="subject subject-button" data-course="surgery2" data-searchable aria-haspopup="true">تمريض جراحة باطنة (2) نظري <span aria-hidden="true">↗</span></button><span class="subject" data-searchable>تمريض جراحة باطنة (2) عملي</span><button type="button" class="subject subject-button" data-course="pediatrics" data-searchable aria-haspopup="true">تمريض أطفال وحديثي الولادة نظري ↗</button><span class="subject" data-searchable>تمريض أطفال وحديثي الولادة عملي</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject" data-searchable>دراسات في التفسير وعلوم القرآن</span><button type="button" class="subject subject-button" data-course="nutrition" data-searchable aria-haspopup="true">علم التغذية ↗</button><button type="button" class="subject subject-button" data-course="microbiology" data-searchable aria-haspopup="true">علم الأحياء الدقيقة ↗</button><button type="button" class="subject subject-button" data-course="surgery3" data-searchable aria-haspopup="true">تمريض جراحة باطنه (3) - Gerontology نظري ↗</button><span class="subject" data-searchable>تمريض جراحة باطنه (3) - Gerontology عملي</span><button type="button" class="subject subject-button" data-course="psychiatric" data-searchable aria-haspopup="true">تمريض الصحة النفسية / نظري ↗</button><span class="subject" data-searchable>تمريض الصحة النفسية / عملي</span></div></div></div></details>
+<details class="year" data-searchable><summary>السنة الرابعة</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject" data-searchable>فلسطين الأرض والإنسان</span><span class="subject" data-searchable>النظريات التمريضية</span><span class="subject" data-searchable>مناهج البحث العلمي للتمريض</span><span class="subject" data-searchable>الصحة العامة وعلم الوبائيات</span><span class="subject" data-searchable>تمريض النساء والولادة نظري</span><span class="subject" data-searchable>تمريض النساء والولادة عملي</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject" data-searchable>قرآن كريم (4)</span><span class="subject" data-searchable>علوم البيئة</span><span class="subject" data-searchable>مدخل لعلوم الأشعة</span><span class="subject" data-searchable>تمريض العناية المكثفة / نظري</span><span class="subject" data-searchable>تمريض العناية المكثفة / عملي</span><span class="subject" data-searchable>تمريض صحة المجتمع نظري</span><span class="subject" data-searchable>تمريض صحة المجتمع عملي</span><span class="subject" data-searchable>الإدارة والقيادة في التمريض / النظري</span><span class="subject" data-searchable>الإدارة والقيادة في التمريض / عملي</span><span class="subject" data-searchable>تدريب امتياز</span></div></div></div></details>
 </div></section>
 
 <section id="courseResources" class="course-resources" hidden aria-live="polite">
@@ -65,18 +66,18 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
   <div id="slidesContent" class="empty-resource" hidden><button type="button" class="page-back" id="backToOptionsSlides">← العودة إلى خيارات المادة</button><br><span>📑</span><h3 id="slidesTitle">السلايدات</h3><p id="slidesMessage">لم تتم إضافة سلايدات هذه المادة بعد. أرسل ملفات PDF أو PowerPoint أو روابطها حتى نضيفها هنا.</p></div>
 </section>
 
-<!-- ممثلون قسم التمريض (مفصول تماماً) -->
-<section id="representatives" style="display:none;" data-searchable>
+<!-- قسم الممثلين -->
+<section id="representatives" style="display:none;" class="main-section">
 <div class="section-head">
   <div>
-    <h2>ممثلو ومندوبو قسم التمريض والكلية</h2>
+    <h2>ممثلو قسم التمريض والكلية</h2>
     <p>التواصل المباشر مع ممثلي الكلية والمستويات الدراسية.</p>
   </div>
   <span class="pill">إدارة وممثلون</span>
 </div>
-<div class="rep-info">
+<div class="grid">
   <!-- منسق الكلية -->
-  <article class="card rep-main-card">
+  <article class="card rep-main-card" data-searchable>
     <div class="rep-info">
       <h3>منسق كلية العلوم الطبية التطبيقية</h3>
       <p><strong>الأخ مؤمن زعرب</strong></p>
@@ -85,7 +86,7 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
   </article>
 
   <!-- ممثل قسم التمريض -->
-  <article class="card rep-card">
+  <article class="card rep-card" data-searchable>
     <div class="rep-info">
       <h3>ممثل قسم التمريض</h3>
       <p><strong>الأخ محمد الدهشان</strong></p>
@@ -94,7 +95,7 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
   </article>
 
   <!-- ممثلو المستوى الرابع -->
-  <article class="card rep-card">
+  <article class="card rep-card" data-searchable>
     <div class="rep-info">
       <h3>ممثلو المستوى الرابع</h3>
       <p><strong>الأخ عبد القادر لافي</strong></p>
@@ -107,7 +108,7 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
   </article>
 
   <!-- ممثلو المستوى الثالث -->
-  <article class="card rep-card">
+  <article class="card rep-card" data-searchable>
     <div class="rep-info">
       <h3>ممثلو المستوى الثالث</h3>
       <p><strong>الاخت ملك ابو الهطل</strong></p>
@@ -118,7 +119,7 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
   </article>
 
   <!-- ممثلو المستوى الثاني -->
-  <article class="card rep-card">
+  <article class="card rep-card" data-searchable>
     <div class="rep-info">
       <h3>ممثلو المستوى الثاني</h3>
       <p><strong>الأخ احمد ابو وردة</strong></p>
@@ -131,7 +132,7 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
 </section>
 
 <!-- قسم القروبات الطلابية -->
-<section id="groups" style="display:none;" data-searchable>
+<section id="groups" style="display:none;" class="main-section">
 <div class="section-head">
   <div>
     <h2>القروبات الطلابية</h2>
@@ -140,20 +141,20 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
   <span class="pill">تنسيق طلابي</span>
 </div>
 <div class="grid">
-  <article class="card"><h3>قروبات السنة الأولى</h3><p>متابعة إعلانات ومواد الدفعة.</p></article>
-  <article class="card"><h3>قروبات السنة الثانية</h3><p>تنسيق المواد والتخصص.</p></article>
-  <article class="card"><h3>قروبات السنة الثالثة</h3><p>مواد الفصل والتدريب العملي.</p></article>
-  <article class="card"><h3>قروبات السنة الرابعة</h3><p>التدريب السريري ومشاريع التخرج.</p></article>
-  <article class="card"><h3>التدريب العملي والسريري</h3><p>مجموعات المستشفيات والمناطق.</p></article>
-  <a class="card" href="#department" id="departmentToggle" aria-expanded="false" aria-controls="department"><h3>إعلانات قسم التمريض</h3><p>نبذة عن القسم ومجالات العمل لخريجي التمريض.</p><span class="action" id="departmentToggleLabel">اضغط لعرض التفاصيل ↓</span></a>
+  <article class="card" data-searchable><h3>قروبات السنة الأولى</h3><p>متابعة إعلانات ومواد الدفعة.</p></article>
+  <article class="card" data-searchable><h3>قروبات السنة الثانية</h3><p>تنسيق المواد والتخصص.</p></article>
+  <article class="card" data-searchable><h3>قروبات السنة الثالثة</h3><p>مواد الفصل والتدريب العملي.</p></article>
+  <article class="card" data-searchable><h3>قروبات السنة الرابعة</h3><p>التدريب السريري ومشاريع التخرج.</p></article>
+  <article class="card" data-searchable><h3>التدريب العملي والسريري</h3><p>مجموعات المستشفيات والمناطق.</p></article>
+  <a class="card" href="#department" id="departmentToggle" aria-expanded="false" aria-controls="department" data-searchable><h3>إعلانات قسم التمريض</h3><p>نبذة عن القسم ومجالات العمل لخريجي التمريض.</p><span class="action" id="departmentToggleLabel">اضغط لعرض التفاصيل ↓</span></a>
 </div>
 </section>
 
-<section id="links" style="display:none;" data-searchable><div class="section-head"><div><h2>روابط مهمة</h2><p>الوصول السريع للمنصات الجامعية والبوتات.</p></div></div><div class="links-list">
-<a class="link-row" href="https://t.me/Nurse2024unibot" target="_blank" rel="noopener"><span class="link-icon">🤖</span><span><strong>بوت مكتبة التمريض الشامل</strong><small>المحاضرات والملفات والمواد الدراسية</small></span><span class="go">فتح البوت ↗</span></a>
-<a class="link-row" href="https://moodle.alazhar.edu.ps/login/index.php" target="_blank" rel="noopener"><span class="link-icon">🎓</span><span><strong>منصة Moodle</strong><small>المحاضرات والملفات الدراسية الرسمية</small></span><span class="go">فتح ↗</span></a>
-<a class="link-row" href="https://gate.alazhar.edu.ps/students/" target="_blank" rel="noopener"><span class="link-icon">👤</span><span><strong>بوابة الطالب</strong><small>الخدمات الأكاديمية والشخصية للطلبة</small></span><span class="go">فتح ↗</span></a>
-<a class="link-row" href="https://t.me/Requirements_AUG_bot" target="_blank" rel="noopener"><span class="link-icon">📝</span><span><strong>بوت المتطلبات الجامعية</strong><small>متابعة متطلبات الجامعة</small></span><span class="go">فتح ↗</span></a>
+<section id="links" style="display:none;" class="main-section"><div class="section-head"><div><h2>روابط مهمة</h2><p>الوصول السريع للمنصات الجامعية والبوتات.</p></div></div><div class="links-list">
+<a class="link-row" href="https://t.me/Nurse2024unibot" target="_blank" rel="noopener" data-searchable><span class="link-icon">🤖</span><span><strong>بوت مكتبة التمريض الشامل</strong><small>المحاضرات والملفات والمواد الدراسية</small></span><span class="go">فتح البوت ↗</span></a>
+<a class="link-row" href="https://moodle.alazhar.edu.ps/login/index.php" target="_blank" rel="noopener" data-searchable><span class="link-icon">🎓</span><span><strong>منصة Moodle</strong><small>المحاضرات والملفات الدراسية الرسمية</small></span><span class="go">فتح ↗</span></a>
+<a class="link-row" href="https://gate.alazhar.edu.ps/students/" target="_blank" rel="noopener" data-searchable><span class="link-icon">👤</span><span><strong>بوابة الطالب</strong><small>الخدمات الأكاديمية والشخصية للطلبة</small></span><span class="go">فتح ↗</span></a>
+<a class="link-row" href="https://t.me/Requirements_AUG_bot" target="_blank" rel="noopener" data-searchable><span class="link-icon">📝</span><span><strong>بوت المتطلبات الجامعية</strong><small>متابعة متطلبات الجامعة</small></span><span class="go">فتح ↗</span></a>
 </div></section>
 
 <section id="department" hidden>
@@ -178,9 +179,44 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
 <div class="notice">ملاحظة: أسماء المواد وتوزيعها هنا كما أُرسلت في الكود. يُفضّل مطابقتها مع ملف الخطة الرسمية قبل اعتمادها نهائيًا.</div>
 </main><footer><div class="wrap"><strong>مكتبة التمريض | جامعة الأزهر – غزة</strong><p>العلم رسالة، والتمريض إنسانية.</p><p class="footer-note">مبادرة طلابية لتنظيم الموارد الأكاديمية — ليست موقعًا رسميًا للجامعة.</p></div></footer>
 <script>
-const searchForm=document.getElementById('searchForm');const searchInput=document.getElementById('searchInput');const searchable=[...document.querySelectorAll('[data-searchable]')];
-function runSearch(){const q=searchInput.value.trim().toLocaleLowerCase('ar');searchable.forEach(el=>{const match=!q||el.innerText.toLocaleLowerCase('ar').includes(q);el.style.display=match?'':'none';});if(q){document.querySelectorAll('details.year').forEach(el=>{if(el.innerText.toLocaleLowerCase('ar').includes(q))el.open=true;});}}
-searchForm.addEventListener('submit',e=>{e.preventDefault();runSearch();});searchInput.addEventListener('input',runSearch);
+const searchForm = document.getElementById('searchForm');
+const searchInput = document.getElementById('searchInput');
+
+function runSearch() {
+  const q = searchInput.value.trim().toLocaleLowerCase('ar');
+  const searchableElements = document.querySelectorAll('[data-searchable]');
+  
+  if (!q) {
+    // إعادة الأقسام والمستويات لحالتها الطبيعية
+    searchableElements.forEach(el => el.style.display = '');
+    document.querySelectorAll('.main-section').forEach(sec => sec.style.display = 'none');
+    document.querySelectorAll('.quick-toggle').forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+    document.querySelectorAll('details.year').forEach(el => el.open = false);
+    return;
+  }
+
+  // فلترة العناصر
+  searchableElements.forEach(el => {
+    const match = el.innerText.toLocaleLowerCase('ar').includes(q);
+    el.style.display = match ? '' : 'none';
+    
+    // إذا عثر على نتيجة، يتم إظهار القسم الرئيسي الحاضن لها
+    if (match) {
+      const parentSection = el.closest('.main-section');
+      if (parentSection) {
+        parentSection.style.display = 'block';
+        const toggleBtn = document.querySelector(`.quick-toggle[data-target="${parentSection.id}"]`);
+        if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'true');
+      }
+      
+      const parentDetails = el.closest('details.year');
+      if (parentDetails) parentDetails.open = true;
+    }
+  });
+}
+
+searchForm.addEventListener('submit', e => { e.preventDefault(); runSearch(); });
+searchInput.addEventListener('input', runSearch);
 
 const quickToggles = document.querySelectorAll('.quick-toggle');
 quickToggles.forEach(button => {
@@ -194,17 +230,17 @@ quickToggles.forEach(button => {
   });
 });
 
-const departmentToggle=document.getElementById('departmentToggle');
-const departmentSection=document.getElementById('department');
-const departmentToggleLabel=document.getElementById('departmentToggleLabel');
-departmentSection.hidden=true;
-departmentToggle.addEventListener('click',e=>{
+const departmentToggle = document.getElementById('departmentToggle');
+const departmentSection = document.getElementById('department');
+const departmentToggleLabel = document.getElementById('departmentToggleLabel');
+departmentSection.hidden = true;
+departmentToggle.addEventListener('click', e => {
   e.preventDefault();
-  const opening=departmentSection.hidden;
-  departmentSection.hidden=!opening;
-  departmentToggle.setAttribute('aria-expanded',String(opening));
-  departmentToggleLabel.textContent=opening?'إخفاء التفاصيل ↑':'اضغط لعرض التفاصيل ↓';
-  if(opening) departmentSection.scrollIntoView({behavior:'smooth',block:'start'});
+  const opening = departmentSection.hidden;
+  departmentSection.hidden = !opening;
+  departmentToggle.setAttribute('aria-expanded', String(opening));
+  departmentToggleLabel.textContent = opening ? 'إخفاء التفاصيل ↑' : 'اضغط لعرض التفاصيل ↓';
+  if (opening) departmentSection.scrollIntoView({behavior:'smooth', block:'start'});
 });
 </script>
 </body>
