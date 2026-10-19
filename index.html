@@ -11,15 +11,17 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
 .topbar{background:#0b2335;color:#dce8ef;font-size:13px;padding:9px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 header{background:linear-gradient(125deg,var(--navy),#1d536d);color:white;padding:26px 0 52px;position:relative;overflow:hidden}header:after{content:"";position:absolute;width:340px;height:340px;border:1px solid #ffffff18;border-radius:50%;left:-80px;top:-130px;box-shadow:0 0 0 45px #ffffff08,0 0 0 90px #ffffff05}.brand{display:flex;align-items:center;gap:14px;position:relative;z-index:1}.logo{width:58px;height:58px;border-radius:17px;background:#ffffff16;border:1px solid #ffffff30;display:grid;place-items:center;font-size:29px}.brand h1{font-size:clamp(24px,4vw,36px);margin:0;font-weight:800}.brand p{margin:3px 0 0;color:#c8dbe7;font-size:14px}.hero{position:relative;z-index:1;padding-top:34px;max-width:720px}.eyebrow{color:#9ce6d9;font-size:13px;font-weight:bold;letter-spacing:.4px}.hero h2{font-size:clamp(27px,5vw,45px);line-height:1.35;margin:10px 0 14px}.hero p{color:#d8e7ef;margin:0 0 18px;max-width:900px}.intro-copy{max-width:900px;margin:0 0 24px;color:#d8e7ef}.intro-copy p{margin:0 0 13px;max-width:none}.intro-copy .intro-signature{font-weight:bold;color:#9ce6d9;margin-top:18px}.search{display:flex;gap:9px;max-width:620px;background:white;padding:7px;border-radius:15px;box-shadow:var(--shadow)}.search input{flex:1;min-width:0;border:0;outline:0;padding:12px;font:inherit;color:var(--ink)}.search button{border:0;background:var(--teal);color:white;padding:0 20px;border-radius:10px;font:inherit;font-weight:bold;cursor:pointer}
-main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:-48px;position:relative;z-index:2}.quick{display:block;width:100%;text-align:right;font:inherit;color:inherit;cursor:pointer;background:#edf4f8;border:1px solid #b9d4df;border-radius:17px;padding:18px;box-shadow:var(--shadow);transition:.2s}.quick[aria-expanded="true"]{background:white;border-color:var(--line)}.quick-toggle:focus-visible{outline:3px solid var(--teal);outline-offset:3px}.quick:hover,.card:hover{transform:translateY(-3px)}.quick .ico{font-size:24px}.quick h3{font-size:16px;margin:8px 0 2px}.quick p{font-size:12px;color:var(--muted);margin:0}section{scroll-margin-top:20px;margin-top:42px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:17px}.section-head h2{margin:0;font-size:24px;color:var(--navy)}.section-head p{margin:4px 0 0;color:var(--muted);font-size:14px}.pill{font-size:12px;color:var(--navy2);background:#e3f4f1;padding:6px 11px;border-radius:99px;white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:white;border:1px solid var(--line);border-radius:17px;padding:20px;box-shadow:var(--shadow);transition:.2s}.card h3{margin:0 0 7px;font-size:18px;color:var(--navy)}.card p{margin:0 0 15px;color:var(--muted);font-size:13px}.card .action{display:inline-flex;align-items:center;gap:7px;color:var(--navy2);font-size:13px;font-weight:bold;background:#edf4f8;padding:8px 12px;border-radius:99px}.year{border:1px solid var(--line);border-radius:15px;background:white;margin-bottom:10px;overflow:hidden}.year summary{cursor:pointer;padding:16px 19px;font-weight:bold;color:var(--navy);display:flex;justify-content:space-between;gap:10px;list-style:none}.year summary::-webkit-details-marker{display:none}.year summary:after{content:"＋";color:var(--teal)}.year[open] summary:after{content:"−"}.year-content{padding:0 19px 18px}.semester{background:#f5f8fa;border-radius:12px;padding:13px;margin-top:10px}.semester h4{margin:0 0 9px;color:var(--navy2)}.subject-list{display:flex;flex-wrap:wrap;gap:8px}.subject{font-size:13px;border:1px solid #dbe5eb;border-radius:8px;background:white;padding:7px 10px;color:#465c6b;font-weight:500}.links-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.link-row{display:flex;align-items:center;gap:13px;background:white;border:1px solid var(--line);border-radius:14px;padding:15px}.link-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:#e7f4f1;font-size:21px;flex-shrink:0}.link-row strong{display:block;color:var(--navy)}.link-row small{color:var(--muted)}.link-row .go{margin-right:auto;color:var(--teal);font-weight:bold}.bot-icon-link{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#e7f4f1;font-size:21px;flex-shrink:0}.bot-icon-link:focus-visible{outline:3px solid var(--teal);outline-offset:3px}.notice{margin-top:22px;background:#fff8e8;border:1px solid #f4dfad;color:#74551a;border-radius:13px;padding:13px 16px;font-size:13px}footer{background:#0b2335;color:#d8e5ed;padding:28px 0;text-align:center;font-size:13px}footer strong{color:white}footer p{margin:5px 0}.footer-note{color:#9eb6c5;font-size:12px}
+main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-48px;position:relative;z-index:2}.quick{display:block;width:100%;text-align:right;font:inherit;color:inherit;cursor:pointer;background:#edf4f8;border:1px solid #b9d4df;border-radius:17px;padding:18px;box-shadow:var(--shadow);transition:.2s}.quick[aria-expanded="true"]{background:white;border-color:var(--line)}.quick-toggle:focus-visible{outline:3px solid var(--teal);outline-offset:3px}.quick:hover,.card:hover{transform:translateY(-3px)}.quick .ico{font-size:24px}.quick h3{font-size:15px;margin:8px 0 2px}.quick p{font-size:11px;color:var(--muted);margin:0}section{scroll-margin-top:20px;margin-top:42px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:17px}.section-head h2{margin:0;font-size:24px;color:var(--navy)}.section-head p{margin:4px 0 0;color:var(--muted);font-size:14px}.pill{font-size:12px;color:var(--navy2);background:#e3f4f1;padding:6px 11px;border-radius:99px;white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:white;border:1px solid var(--line);border-radius:17px;padding:20px;box-shadow:var(--shadow);transition:.2s}.card h3{margin:0 0 7px;font-size:18px;color:var(--navy)}.card p{margin:0 0 15px;color:var(--muted);font-size:13px}.card .action{display:inline-flex;align-items:center;gap:7px;color:var(--navy2);font-size:13px;font-weight:bold;background:#edf4f8;padding:8px 12px;border-radius:99px}.year{border:1px solid var(--line);border-radius:15px;background:white;margin-bottom:10px;overflow:hidden}.year summary{cursor:pointer;padding:16px 19px;font-weight:bold;color:var(--navy);display:flex;justify-content:space-between;gap:10px;list-style:none}.year summary::-webkit-details-marker{display:none}.year summary:after{content:"＋";color:var(--teal)}.year[open] summary:after{content:"−"}.year-content{padding:0 19px 18px}.semester{background:#f5f8fa;border-radius:12px;padding:13px;margin-top:10px}.semester h4{margin:0 0 9px;color:var(--navy2)}.subject-list{display:flex;flex-wrap:wrap;gap:8px}.subject{font-size:13px;border:1px solid #dbe5eb;border-radius:8px;background:white;padding:7px 10px;color:#465c6b;font-weight:500}.links-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.link-row{display:flex;align-items:center;gap:13px;background:white;border:1px solid var(--line);border-radius:14px;padding:15px}.link-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:#e7f4f1;font-size:21px;flex-shrink:0}.link-row strong{display:block;color:var(--navy)}.link-row small{color:var(--muted)}.link-row .go{margin-right:auto;color:var(--teal);font-weight:bold}.notice{margin-top:22px;background:#fff8e8;border:1px solid #f4dfad;color:#74551a;border-radius:13px;padding:13px 16px;font-size:13px}footer{background:#0b2335;color:#d8e5ed;padding:28px 0;text-align:center;font-size:13px}footer strong{color:white}footer p{margin:5px 0}.footer-note{color:#9eb6c5;font-size:12px}
 
-/* تنسيقات شبكة الممثلين */
-.network-head-card{background:linear-gradient(135deg,var(--navy),var(--navy2));color:white;grid-column:1/-1;border:none;box-shadow:var(--shadow)}
-.network-head-card h3{color:var(--gold)}
-.network-head-card p{color:#dce8ef}
+/* تنسيقات كروت الممثلين */
+.rep-main-card{background:linear-gradient(135deg,var(--navy),var(--navy2));color:white;grid-column:1/-1;border:none}
+.rep-main-card h3{color:var(--gold);font-size:20px}
+.rep-main-card p{color:#dce8ef;font-size:16px;margin-bottom:15px}
 .rep-card{display:flex;flex-direction:column;justify-content:space-between}
-.rep-info{margin-bottom:12px}
-.whatsapp-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#25d366;color:white;padding:8px 14px;border-radius:10px;font-size:13px;font-weight:bold;margin-top:auto;transition:.2s}
+.rep-info{margin-bottom:14px}
+.rep-info h3{font-size:16px;color:var(--navy2);margin-bottom:8px}
+.rep-info p{margin:4px 0;color:var(--ink);font-size:14px}
+.whatsapp-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#25d366;color:white;padding:9px 14px;border-radius:10px;font-size:13px;font-weight:bold;margin-top:auto;transition:.2s;direction:ltr;width:fit-content}
 .whatsapp-btn:hover{background:#1ebe5d}
 
 .subject-button{font-family:inherit;cursor:pointer;display:inline-flex;align-items:center;gap:8px}.subject-button:hover,.subject-button:focus-visible{border-color:var(--teal);background:#e9f7f4;outline:none}.course-resources{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow);min-height:60vh}.course-page-mode .topbar,.course-page-mode header,.course-page-mode footer,.course-page-mode main> :not(#courseResources){display:none!important}.course-page-mode main{padding-top:18px}.page-back{border:0;background:#edf4f8;color:var(--navy);padding:9px 13px;border-radius:10px;font:inherit;font-weight:bold;cursor:pointer;margin-bottom:15px}.page-back:hover{background:#dcebf2}.page-title{display:flex;align-items:center;gap:10px;margin-bottom:16px}.page-title h2{margin:0;color:var(--navy)}.course-resources[hidden],.lecture-content[hidden],.empty-resource[hidden],.surgery-only[hidden]{display:none!important}.close-course{border:0;background:#edf4f8;color:var(--navy);padding:8px 12px;border-radius:9px;font:inherit;cursor:pointer}.resource-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.resource-option{display:flex;flex-direction:column;align-items:flex-start;text-align:right;gap:7px;padding:18px;border:1px solid var(--line);background:#f8fbfc;border-radius:14px;cursor:pointer;font:inherit;color:var(--ink);transition:.2s}.resource-option:hover,.resource-option:focus-visible{border-color:var(--teal);background:#effaf7;outline:none}.resource-emoji{font-size:28px}.resource-option strong{color:var(--navy);font-size:17px}.resource-option small{color:var(--muted);font-size:12px}.lecture-content{margin-top:22px}.lecture-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.lecture-heading h3{margin:0;color:var(--navy)}.lecture-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}.lecture-topic{border:1px solid var(--line);border-radius:13px;padding:15px;background:#fbfcfd}.lecture-topic h4{margin:0 0 10px;color:var(--navy);font-size:15px}.lecture-topic a{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 10px;margin-top:6px;border-radius:8px;background:#edf4f8;color:var(--navy2);font-size:13px}.lecture-topic a span{color:#138779;font-weight:bold}.empty-resource{margin-top:18px;padding:22px;text-align:center;background:#f8fbfc;border:1px dashed #cbdbe3;border-radius:13px}.empty-resource>span{font-size:30px}.empty-resource h3{margin:5px 0;color:var(--navy)}.empty-resource p{margin:0;color:var(--muted);font-size:13px}@media(max-width:600px){.resource-options,.lecture-list{grid-template-columns:1fr}.course-resources{padding:15px}.lecture-topic{padding:12px}}
@@ -35,9 +37,10 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(3
 </div><form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="ابحث عن مادة، سنة دراسية أو رابط..." aria-label="ابحث في المكتبة"><button type="submit">بحث</button></form></div></div></header>
 <main class="wrap">
 <div class="quicklinks">
-<button type="button" class="quick quick-toggle" data-target="plan" aria-expanded="false"><div class="ico">🗓️</div><h3>الخطة الدراسية</h3><p>اضغط لعرض أو إخفاء المستويات والفصول</p></button>
-<button type="button" class="quick quick-toggle" data-target="groups" aria-expanded="false"><div class="ico">👥</div><h3>القروبات الطلابية وممثلو القسم</h3><p>اضغط لعرض أو إخفاء شبكة الممثلين والقروبات</p></button>
-<button type="button" class="quick quick-toggle" data-target="links" aria-expanded="false"><div class="ico">🔗</div><h3>روابط مهمة</h3><p>اضغط لعرض أو إخفاء الروابط</p></button>
+<button type="button" class="quick quick-toggle" data-target="plan" aria-expanded="false"><div class="ico">🗓️</div><h3>الخطة الدراسية</h3><p>المستويات والفصول الدراسية</p></button>
+<button type="button" class="quick quick-toggle" data-target="representatives" aria-expanded="false"><div class="ico">🎓</div><h3>الممثلون والمندوبون</h3><p>ممثل الكلية وممثلو المستويات</p></button>
+<button type="button" class="quick quick-toggle" data-target="groups" aria-expanded="false"><div class="ico">👥</div><h3>القروبات الطلابية</h3><p>تواصل مع زملائك والدفعات</p></button>
+<button type="button" class="quick quick-toggle" data-target="links" aria-expanded="false"><div class="ico">🔗</div><h3>روابط مهمة</h3><p>المنصات الجامعية والبوتات</p></button>
 </div>
 
 <section id="plan" style="display:none;" data-searchable><div class="section-head"><div><h2>الخطة الدراسية (خطة التمريض)</h2><p>تفاصيل مواد السنوات الأربع والفصول الدراسية حسب القائمة المضافة.</p><a href="./Plan-nursing.pdf" target="_blank" class="download-btn">📄 عرض / تحميل خطة التمريض (PDF)</a></div><span class="pill">المستويات الأربعة</span></div><div id="planList">
@@ -62,30 +65,23 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(3
   <div id="slidesContent" class="empty-resource" hidden><button type="button" class="page-back" id="backToOptionsSlides">← العودة إلى خيارات المادة</button><br><span>📑</span><h3 id="slidesTitle">السلايدات</h3><p id="slidesMessage">لم تتم إضافة سلايدات هذه المادة بعد. أرسل ملفات PDF أو PowerPoint أو روابطها حتى نضيفها هنا.</p></div>
 </section>
 
-<section id="links" style="display:none;" data-searchable><div class="section-head"><div><h2>روابط مهمة</h2><p>الوصول السريع للمنصات الجامعية والبوتات.</p></div></div><div class="links-list">
-<a class="link-row" href="https://t.me/Nurse2024unibot" target="_blank" rel="noopener"><span class="link-icon">🤖</span><span><strong>بوت مكتبة التمريض الشامل</strong><small>المحاضرات والملفات والمواد الدراسية</small></span><span class="go">فتح البوت ↗</span></a>
-<a class="link-row" href="https://moodle.alazhar.edu.ps/login/index.php" target="_blank" rel="noopener"><span class="link-icon">🎓</span><span><strong>منصة Moodle</strong><small>المحاضرات والملفات الدراسية الرسمية</small></span><span class="go">فتح ↗</span></a>
-<a class="link-row" href="https://gate.alazhar.edu.ps/students/" target="_blank" rel="noopener"><span class="link-icon">👤</span><span><strong>بوابة الطالب</strong><small>الخدمات الأكاديمية والشخصية للطلبة</small></span><span class="go">فتح ↗</span></a>
-<a class="link-row" href="https://t.me/Requirements_AUG_bot" target="_blank" rel="noopener"><span class="link-icon">📝</span><span><strong>بوت المتطلبات الجامعية</strong><small>متابعة متطلبات الجامعة</small></span><span class="go">فتح ↗</span></a>
-</div></section>
-
-<!-- قسم القروبات الطلابية وشبكة ممثلي القسم -->
-<section id="groups" style="display:none;" data-searchable>
+<!-- قسم الممثلون والمندوبون (مفصول تماماً) -->
+<section id="representatives" style="display:none;" data-searchable>
 <div class="section-head">
   <div>
-    <h2>القروبات الطلابية وممثلو قسم التمريض</h2>
-    <p>شبكة التواصل الرسمية مع ممثلي الكلية والمستويات الأكاديمية.</p>
+    <h2>ممثلو ومندوبو قسم التمريض والكلية</h2>
+    <p>التواصل المباشر مع ممثلي الكلية والمستويات الدراسية.</p>
   </div>
-  <span class="pill">تنسيق طلابي</span>
+  <span class="pill">إدارة وممثلون</span>
 </div>
 <div class="grid">
-  <!-- رأس الشبكة: منسق كلية العلوم الطبية التطبيقية -->
-  <article class="card network-head-card">
+  <!-- منسق الكلية -->
+  <article class="card rep-main-card">
     <div class="rep-info">
-      <h3>رأس الشبكة – منسق كلية العلوم الطبية التطبيقية</h3>
+      <h3>منسق كلية العلوم الطبية التطبيقية</h3>
       <p><strong>الأخ مؤمن زعرب</strong></p>
     </div>
-    <a href="https://wa.me/970598441896" target="_blank" class="whatsapp-btn">💬 مراسلة عبر واتساب</a>
+    <a href="https://wa.me/970598441896" target="_blank" class="whatsapp-btn">+970 598 441 896 💬</a>
   </article>
 
   <!-- ممثل قسم التمريض -->
@@ -94,19 +90,19 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(3
       <h3>ممثل قسم التمريض</h3>
       <p><strong>الأخ محمد الدهشان</strong></p>
     </div>
-    <a href="https://wa.me/972592185211" target="_blank" class="whatsapp-btn">💬 مراسلة عبر واتساب</a>
+    <a href="https://wa.me/972592185211" target="_blank" class="whatsapp-btn">+972 59-218-5211 💬</a>
   </article>
 
   <!-- ممثلو المستوى الرابع -->
   <article class="card rep-card">
     <div class="rep-info">
       <h3>ممثلو المستوى الرابع</h3>
-      <p><strong>الأخ عبد القادر لافي</strong><br><strong>الاخت رئيسة النجار</strong><br><strong>الاخت ورود عطالله</strong></p>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:6px;">
-      <a href="https://wa.me/972595764230" target="_blank" class="whatsapp-btn" style="padding:6px 10px; font-size:12px;">عبد القادر لافي</a>
-      <a href="https://wa.me/972592795992" target="_blank" class="whatsapp-btn" style="padding:6px 10px; font-size:12px;">رئيسة النجار</a>
-      <a href="https://wa.me/972593691061" target="_blank" class="whatsapp-btn" style="padding:6px 10px; font-size:12px;">ورود عطالله</a>
+      <p><strong>الأخ عبد القادر لافي</strong></p>
+      <a href="https://wa.me/972595764230" target="_blank" class="whatsapp-btn" style="padding:6px 10px; font-size:12px; margin-bottom:10px;">+972 59-576-4230 💬</a>
+      <p><strong>الاخت رئيسة النجار</strong></p>
+      <a href="https://wa.me/972592795992" target="_blank" class="whatsapp-btn" style="padding:6px 10px; font-size:12px; margin-bottom:10px;">+972 59-279-5992 💬</a>
+      <p><strong>الاخت ورود عطالله</strong></p>
+      <a href="https://wa.me/972593691061" target="_blank" class="whatsapp-btn" style="padding:6px 10px; font-size:12px;">+972 59-369-1061 💬</a>
     </div>
   </article>
 
@@ -114,11 +110,10 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(3
   <article class="card rep-card">
     <div class="rep-info">
       <h3>ممثلو المستوى الثالث</h3>
-      <p><strong>الاخت ملك ابو الهطل</strong><br><strong>الأخ محمد الزهار</strong></p>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:6px;">
-      <a href="https://wa.me/972567701575" target="_blank" class="whatsapp-btn" style="padding:6px 10px; font-size:12px;">ملك ابو الهطل</a>
-      <a href="https://wa.me/972592577985" target="_blank" class="whatsapp-btn" style="padding:6px 10px; font-size:12px;">محمد الزهار</a>
+      <p><strong>الاخت ملك ابو الهطل</strong></p>
+      <a href="https://wa.me/972567701575" target="_blank" class="whatsapp-btn" style="padding:6px 10px; font-size:12px; margin-bottom:10px;">+972 56-770-1575 💬</a>
+      <p><strong>الأخ محمد الزهار</strong></p>
+      <a href="https://wa.me/972592577985" target="_blank" class="whatsapp-btn" style="padding:6px 10px; font-size:12px;">+972 59-257-7985 💬</a>
     </div>
   </article>
 
@@ -126,22 +121,40 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(3
   <article class="card rep-card">
     <div class="rep-info">
       <h3>ممثلو المستوى الثاني</h3>
-      <p><strong>الأخ احمد ابو وردة</strong><br><strong>الاخت سيدرا حسان</strong></p>
-    </div>
-    <div style="display:flex; flex-direction:column; gap:6px;">
-      <a href="https://wa.me/970598276697" target="_blank" class="whatsapp-btn" style="padding:6px 10px; font-size:12px;">احمد ابو وردة</a>
-      <a href="https://wa.me/972597786350" target="_blank" class="whatsapp-btn" style="padding:6px 10px; font-size:12px;">سيدرا حسان</a>
+      <p><strong>الأخ احمد ابو وردة</strong></p>
+      <a href="https://wa.me/970598276697" target="_blank" class="whatsapp-btn" style="padding:6px 10px; font-size:12px; margin-bottom:10px;">+970 598 276 697 💬</a>
+      <p><strong>الاخت سيدرا حسان</strong></p>
+      <a href="https://wa.me/972597786350" target="_blank" class="whatsapp-btn" style="padding:6px 10px; font-size:12px;">+972 59-778-6350 💬</a>
     </div>
   </article>
-
-  <!-- إعلانات قسم التمريض -->
-  <a class="card" href="#department" id="departmentToggle" aria-expanded="false" aria-controls="department">
-    <h3>إعلانات قسم التمريض</h3>
-    <p>نبذة عن القسم ومجالات العمل لخريجي التمريض.</p>
-    <span class="action" id="departmentToggleLabel">اضغط لعرض التفاصيل ↓</span>
-  </a>
 </div>
 </section>
+
+<!-- قسم القروبات الطلابية -->
+<section id="groups" style="display:none;" data-searchable>
+<div class="section-head">
+  <div>
+    <h2>القروبات الطلابية</h2>
+    <p>تواصل مع زملائك عبر قروبات الدفعات والمواد.</p>
+  </div>
+  <span class="pill">تنسيق طلابي</span>
+</div>
+<div class="grid">
+  <article class="card"><h3>قروبات السنة الأولى</h3><p>متابعة إعلانات ومواد الدفعة.</p></article>
+  <article class="card"><h3>قروبات السنة الثانية</h3><p>تنسيق المواد والتخصص.</p></article>
+  <article class="card"><h3>قروبات السنة الثالثة</h3><p>مواد الفصل والتدريب العملي.</p></article>
+  <article class="card"><h3>قروبات السنة الرابعة</h3><p>التدريب السريري ومشاريع التخرج.</p></article>
+  <article class="card"><h3>التدريب العملي والسريري</h3><p>مجموعات المستشفيات والمناطق.</p></article>
+  <a class="card" href="#department" id="departmentToggle" aria-expanded="false" aria-controls="department"><h3>إعلانات قسم التمريض</h3><p>نبذة عن القسم ومجالات العمل لخريجي التمريض.</p><span class="action" id="departmentToggleLabel">اضغط لعرض التفاصيل ↓</span></a>
+</div>
+</section>
+
+<section id="links" style="display:none;" data-searchable><div class="section-head"><div><h2>روابط مهمة</h2><p>الوصول السريع للمنصات الجامعية والبوتات.</p></div></div><div class="links-list">
+<a class="link-row" href="https://t.me/Nurse2024unibot" target="_blank" rel="noopener"><span class="link-icon">🤖</span><span><strong>بوت مكتبة التمريض الشامل</strong><small>المحاضرات والملفات والمواد الدراسية</small></span><span class="go">فتح البوت ↗</span></a>
+<a class="link-row" href="https://moodle.alazhar.edu.ps/login/index.php" target="_blank" rel="noopener"><span class="link-icon">🎓</span><span><strong>منصة Moodle</strong><small>المحاضرات والملفات الدراسية الرسمية</small></span><span class="go">فتح ↗</span></a>
+<a class="link-row" href="https://gate.alazhar.edu.ps/students/" target="_blank" rel="noopener"><span class="link-icon">👤</span><span><strong>بوابة الطالب</strong><small>الخدمات الأكاديمية والشخصية للطلبة</small></span><span class="go">فتح ↗</span></a>
+<a class="link-row" href="https://t.me/Requirements_AUG_bot" target="_blank" rel="noopener"><span class="link-icon">📝</span><span><strong>بوت المتطلبات الجامعية</strong><small>متابعة متطلبات الجامعة</small></span><span class="go">فتح ↗</span></a>
+</div></section>
 
 <section id="department" hidden>
 <div class="section-head"><div><h2>إعلانات قسم التمريض</h2><p>نبذة عن القسم ومجالات العمل</p></div><span class="pill">قسم التمريض</span></div>
