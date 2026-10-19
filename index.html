@@ -67,7 +67,7 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
   <div id="lectureContent" class="lecture-content" hidden>
     <button type="button" class="page-back" id="backToOptionsLectures">← العودة إلى خيارات المادة</button>
     <div id="customLecturesContainer"></div>
-    <div id="lecturesPlaceholder" class="empty-resource" hidden><span>🎥</span><h3>محاضرات المادة</h3><p>لم تتم إضافة روابط المحاضرات لهذه المادة بعد.</p></div>
+    <div id="lecturesPlaceholder" class="empty-resource" hidden><span>🎥</span><h3>محاضرات المادة</h3><p>لم تتم إضافة روابط المحاضرات لهذه المادة بعد. يمكنك تزويدنا بروابطها ليتم إدراجها فوراً.</p></div>
   </div>
   <div id="slidesContent" class="empty-resource" hidden>
     <button type="button" class="page-back" id="backToOptionsSlides">← العودة إلى خيارات المادة</button><br>
@@ -323,6 +323,20 @@ const coursesData = {
       { name: "المحاضرة 24", link: "https://youtu.be/jm3fQE6bbFw" }
     ]
   },
+  dosage: {
+    title: "علم حساب الجرعة العلاجية",
+    subtitle: "حركة الشبيبة الفتحاوية - محاضرات حساب الجرعة العلاجية",
+    lectures: []
+  },
+  ethics: {
+    title: "أخلاقيات مهنة التمريض",
+    subtitle: "حركة الشبيبة الفتحاوية - محاضرات أخلاقيات المهنة",
+    lectures: [
+      { name: "المحاضرة 1", link: "https://youtu.be/BO5a549QoV4" },
+      { name: "المحاضرة 2", link: "https://youtu.be/7uyXjPW-Vkc" },
+      { name: "المحاضرة 3", link: "https://youtu.be/tEcg0Li6F2g" }
+    ]
+  },
   fundamentals1: {
     title: "أساسيات التمريض (1) نظري",
     subtitle: "حركة الشبيبة الفتحاوية - سلسلة الأساسيات المتميزة",
@@ -348,14 +362,55 @@ const coursesData = {
       { name: "المحاضرة 8 - الجزء الثالث", link: "https://www.youtube.com/watch?v=rUZLUOFgQbY" }
     ]
   },
-  ethics: {
-    title: "أخلاقيات مهنة التمريض",
-    subtitle: "حركة الشبيبة الفتحاوية - محاضرات أخلاقيات المهنة",
-    lectures: [
-      { name: "المحاضرة 1", link: "https://youtu.be/BO5a549QoV4" },
-      { name: "المحاضرة 2", link: "https://youtu.be/7uyXjPW-Vkc" },
-      { name: "المحاضرة 3", link: "https://youtu.be/tEcg0Li6F2g" }
-    ]
+  fundamentals2: {
+    title: "أساسيات التمريض (2) نظري",
+    subtitle: "حركة الشبيبة الفتحاوية - محاضرات أساسيات التمريض (2)",
+    lectures: []
+  },
+  fundamentals2_practical: {
+    title: "أساسيات التمريض (2) عملي",
+    subtitle: "حركة الشبيبة الفتحاوية - المهارات العملية لأساسيات التمريض",
+    lectures: []
+  },
+  health_assessment: {
+    title: "التقييم الصحي السريري للمريض",
+    subtitle: "حركة الشبيبة الفتحاوية - محاضرات التقييم الصحي",
+    lectures: []
+  },
+  surgery1: {
+    title: "تمريض جراحة باطنة (1) نظري",
+    subtitle: "حركة الشبيبة الفتحاوية - محاضرات باطني جراحي (1)",
+    lectures: []
+  },
+  surgery2: {
+    title: "تمريض جراحة باطنة (2) نظري",
+    subtitle: "حركة الشبيبة الفتحاوية - محاضرات باطني جراحي (2)",
+    lectures: []
+  },
+  pediatrics: {
+    title: "تمريض أطفال وحديثي الولادة نظري",
+    subtitle: "حركة الشبيبة الفتحاوية - محاضرات تمريض الأطفال",
+    lectures: []
+  },
+  nutrition: {
+    title: "علم التغذية",
+    subtitle: "حركة الشبيبة الفتحاوية - محاضرات علم التغذية",
+    lectures: []
+  },
+  microbiology: {
+    title: "علم الأحياء الدقيقة",
+    subtitle: "حركة الشبيبة الفتحاوية - محاضرات الأحياء الدقيقة",
+    lectures: []
+  },
+  surgery3: {
+    title: "تمريض جراحة باطنه (3) - Gerontology نظري",
+    subtitle: "حركة الشبيبة الفتحاوية - محاضرات باطني جراحي (3)",
+    lectures: []
+  },
+  psychiatric: {
+    title: "تمريض الصحة النفسية / نظري",
+    subtitle: "حركة الشبيبة الفتحاوية - محاضرات الصحة النفسية",
+    lectures: []
   },
   research: {
     title: "مناهج البحث العلمي للتمريض",
