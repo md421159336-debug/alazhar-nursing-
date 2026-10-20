@@ -10,7 +10,9 @@
 :root{--navy:#12324a;--navy2:#1b4965;--teal:#18a999;--gold:#f0b64a;--ink:#172b3a;--muted:#617485;--paper:#f4f7fa;--white:#fff;--line:#e1e9ef;--shadow:0 12px 32px #102d4610}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
 .topbar{background:#0b2335;color:#dce8ef;font-size:13px;padding:9px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-header{background:linear-gradient(125deg,var(--navy),#1d536d);color:white;padding:26px 0 52px;position:relative;overflow:hidden}header:after{content:"";position:absolute;width:340px;height:340px;border:1px solid #ffffff18;border-radius:50%;left:-80px;top:-130px;box-shadow:0 0 0 45px #ffffff08,0 0 0 90px #ffffff05}.brand{display:flex;align-items:center;gap:14px;position:relative;z-index:1}.logo{width:58px;height:58px;border-radius:17px;background:#ffffff16;border:1px solid #ffffff30;display:grid;place-items:center;font-size:29px}.brand h1{font-size:clamp(24px,4vw,36px);margin:0;font-weight:800}.brand p{margin:3px 0 0;color:#c8dbe7;font-size:14px}.hero{position:relative;z-index:1;padding-top:34px;max-width:720px}.eyebrow{color:#9ce6d9;font-size:13px;font-weight:bold;letter-spacing:.4px}.hero h2{font-size:clamp(27px,5vw,45px);line-height:1.35;margin:10px 0 14px}.hero p{color:#d8e7ef;margin:0 0 18px;max-width:900px}.intro-copy{max-width:900px;margin:0 0 24px;color:#d8e7ef}.intro-copy p{margin:0 0 13px;max-width:none}.intro-copy .intro-signature{font-weight:bold;color:#9ce6d9;margin-top:18px}.search{display:flex;gap:9px;max-width:620px;background:white;padding:7px;border-radius:15px;box-shadow:var(--shadow)}.search input{flex:1;min-width:0;border:0;outline:0;padding:12px;font:inherit;color:var(--ink)}.search button{border:0;background:var(--teal);color:white;padding:0 20px;border-radius:10px;font:inherit;font-weight:bold;cursor:pointer}
+header{background:linear-gradient(125deg,var(--navy),#1d536d);color:white;padding:26px 0 52px;position:relative;overflow:hidden}header:after{content:"";position:absolute;width:340px;height:340px;border:1px solid #ffffff18;border-radius:50%;left:-80px;top:-130px;box-shadow:0 0 0 45px #ffffff08,0 0 0 90px #ffffff05}.brand{display:flex;align-items:center;gap:14px;position:relative;z-index:1}
+.logo{width:62px;height:62px;border-radius:18px;background:linear-gradient(135deg,var(--teal),var(--navy));border:2px solid #ffffff50;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(24,169,153,0.3);flex-shrink:0}
+.brand h1{font-size:clamp(24px,4vw,36px);margin:0;font-weight:800}.brand p{margin:3px 0 0;color:#c8dbe7;font-size:14px}.hero{position:relative;z-index:1;padding-top:34px;max-width:720px}.eyebrow{color:#9ce6d9;font-size:13px;font-weight:bold;letter-spacing:.4px}.hero h2{font-size:clamp(27px,5vw,45px);line-height:1.35;margin:10px 0 14px}.hero p{color:#d8e7ef;margin:0 0 18px;max-width:900px}.intro-copy{max-width:900px;margin:0 0 24px;color:#d8e7ef}.intro-copy p{margin:0 0 13px;max-width:none}.intro-copy .intro-signature{font-weight:bold;color:#9ce6d9;margin-top:18px}.search{display:flex;gap:9px;max-width:620px;background:white;padding:7px;border-radius:15px;box-shadow:var(--shadow)}.search input{flex:1;min-width:0;border:0;outline:0;padding:12px;font:inherit;color:var(--ink)}.search button{border:0;background:var(--teal);color:white;padding:0 20px;border-radius:10px;font:inherit;font-weight:bold;cursor:pointer}
 main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-48px;position:relative;z-index:2}.quick{display:block;width:100%;text-align:right;font:inherit;color:inherit;cursor:pointer;background:#edf4f8;border:1px solid #b9d4df;border-radius:17px;padding:18px;box-shadow:var(--shadow);transition:.2s}.quick[aria-expanded="true"]{background:white;border-color:var(--line)}.quick-toggle:focus-visible{outline:3px solid var(--teal);outline-offset:3px}.quick:hover,.card:hover{transform:translateY(-3px)}.quick .ico{font-size:24px}.quick h3{font-size:15px;margin:8px 0 2px}.quick p{font-size:11px;color:var(--muted);margin:0}section{scroll-margin-top:20px;margin-top:42px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:17px}.section-head h2{margin:0;font-size:24px;color:var(--navy)}.section-head p{margin:4px 0 0;color:var(--muted);font-size:14px}.pill{font-size:12px;color:var(--navy2);background:#e3f4f1;padding:6px 11px;border-radius:99px;white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:white;border:1px solid var(--line);border-radius:17px;padding:20px;box-shadow:var(--shadow);transition:.2s}.card h3{margin:0 0 7px;font-size:18px;color:var(--navy)}.card p{margin:0 0 15px;color:var(--muted);font-size:13px}.card .action{display:inline-flex;align-items:center;gap:7px;color:var(--navy2);font-size:13px;font-weight:bold;background:#edf4f8;padding:8px 12px;border-radius:99px}.year{border:1px solid var(--line);border-radius:15px;background:white;margin-bottom:10px;overflow:hidden}.year summary{cursor:pointer;padding:16px 19px;font-weight:bold;color:var(--navy);display:flex;justify-content:space-between;gap:10px;list-style:none}.year summary::-webkit-details-marker{display:none}.year summary:after{content:"＋";color:var(--teal)}.year[open] summary:after{content:"−"}.year-content{padding:0 19px 18px}.semester{background:#f5f8fa;border-radius:12px;padding:13px;margin-top:10px}.semester h4{margin:0 0 9px;color:var(--navy2)}.subject-list{display:flex;flex-wrap:wrap;gap:8px}.subject{font-size:13px;border:1px solid #dbe5eb;border-radius:8px;background:white;padding:7px 10px;color:#465c6b;font-weight:500}.links-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.link-row{display:flex;align-items:center;gap:13px;background:white;border:1px solid var(--line);border-radius:14px;padding:15px}.link-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:#e7f4f1;font-size:21px;flex-shrink:0}.link-row strong{display:block;color:var(--navy)}.link-row small{color:var(--muted)}.link-row .go{margin-right:auto;color:var(--teal);font-weight:bold}.notice{margin-top:22px;background:#fff8e8;border:1px solid #f4dfad;color:#74551a;border-radius:13px;padding:13px 16px;font-size:13px}footer{background:#0b2335;color:#d8e5ed;padding:28px 0;text-align:center;font-size:13px}footer strong{color:white}footer p{margin:5px 0}.footer-note{color:#9eb6c5;font-size:12px}
 
 /* تنسيقات كروت الممثلين */
@@ -32,10 +34,36 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
 </head>
 <body>
 <div class="topbar"><div class="wrap"><span>جامعة الأزهر – غزة</span><span>مرجعك الدراسي في مكان واحد</span></div></div>
-<header><div class="wrap"><div class="brand"><div class="logo" aria-hidden="true">✚</div><div><h1>مكتبة التمريض</h1><p>Nursing Library · Al-Azhar University – Gaza</p></div></div><div class="hero"><div class="eyebrow">منكم، ومعكم، ولأجلكم..</div><h2>منكم، ومعكم، ولأجلكم..</h2><div class="intro-copy">
-<p>أنشأ الطالبان محمد الدهشان وأحمد أبو وردة هذه المكتبة لتجمع مواد التمريض وخططه وروابطه في مكان واحد، امتدادًا لرسالة حركة الشبيبة الفتحاوية في خدمة الطلبة ودعم تميزهم.</p>
-<p class="intro-signature">كلية العلوم الطبية التطبيقية – قسم التمريض | حركة الشبيبة الفتحاوية</p>
-</div><form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="ابحث عن مادة، سنة دراسية أو اسم ممثل..." aria-label="ابحث في المكتبة"><button type="submit">بحث</button></form></div></div></header>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5.2 3a2 2 0 0 0-2 2v1a7 7 0 0 0 14 0V5a2 2 0 0 0-2-2"></path>
+          <line x1="12" y1="12" x2="12" y2="19"></line>
+          <circle cx="12" cy="20" r="1.5" fill="white"></circle>
+          <path d="M8 9h2l1.5 3L13 8l1.5 4H16" stroke="#9ce6d9" stroke-width="2"></path>
+        </svg>
+      </div>
+      <div>
+        <h1>مكتبة التمريض</h1>
+        <p>Nursing Library · Al-Azhar University – Gaza</p>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="eyebrow">منكم، ومعكم، ولأجلكم..</div>
+      <h2>منكم، ومعكم، ولأجلكم..</h2>
+      <div class="intro-copy">
+        <p>أنشأ الطالبان محمد الدهشان وأحمد أبو وردة هذه المكتبة لتجمع مواد التمريض وخططه وروابطه في مكان واحد، امتدادًا لرسالة حركة الشبيبة الفتحاوية في خدمة الطلبة ودعم تميزهم.</p>
+        <p class="intro-signature">كلية العلوم الطبية التطبيقية – قسم التمريض | حركة الشبيبة الفتحاوية</p>
+      </div>
+      <form class="search" id="searchForm">
+        <input id="searchInput" type="search" placeholder="ابحث عن مادة، سنة دراسية أو اسم ممثل..." aria-label="ابحث في المكتبة">
+        <button type="submit">بحث</button>
+      </form>
+    </div>
+  </div>
+</header>
 <main class="wrap">
 <div class="quicklinks">
 <button type="button" class="quick quick-toggle" data-target="plan" aria-expanded="false"><div class="ico">🗓️</div><h3>الخطة الدراسية</h3><p>المساقات و محاضراتها و ملفاتها</p></button>
@@ -66,7 +94,7 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
     <button type="button" class="resource-option" id="showSlides"><span class="resource-emoji">📑</span><strong>السلايدات والكتب</strong><small>ملفات العرض التقديمي والكتب الدراسية</small></button>
   </div>
   <div id="lectureContent" class="lecture-content" hidden>
-    <button type="back" class="page-back" id="backToOptionsLectures">← العودة إلى خيارات المادة</button>
+    <button type="button" class="page-back" id="backToOptionsLectures">← العودة إلى خيارات المادة</button>
     <div id="customLecturesContainer"></div>
     <div id="lecturesPlaceholder" class="empty-resource" hidden><span>🎥</span><h3>محاضرات المادة</h3><p>لم تتم إضافة روابط المحاضرات لهذه المادة بعد.</p></div>
   </div>
@@ -508,7 +536,7 @@ const coursesData = {
     title: "تمريض جراحة باطنة (1) نظري",
     subtitle: "حركة الشبيبة الفتحاوية - باطني جراحي (1)",
     slides: [
-      { name: "سلايدات جراحة نظري 1 (مضغوط)", link: "./جراحةنظري1_(1)_compressed.pdf" }
+      { name: "سلايدات جراحة نظري 1 (PDF)", link: "./surgery1_lecture_notes.pdf" }
     ],
     lectures: [
       { name: "Respiratory Disorders – Part 2", link: "https://youtu.be/099B7Soc-u4" },
@@ -542,7 +570,7 @@ const coursesData = {
     title: "تمريض جراحة باطنة (2) نظري",
     subtitle: "حركة الشبيبة الفتحاوية - د. يوسف خليفة",
     slides: [
-      { name: "كتاب تمريض جراحة باطنة 2 (PDF)", link: "./كتاب جراحة 2.pdf" }
+      { name: "كتاب تمريض جراحة باطنة 2 (PDF)", link: "./surgery2_book.pdf" }
     ],
     lectures: [
       { name: "Assessment of Musculoskeletal Function – Part 1", link: "https://youtu.be/PF9s43MpPJo" },
@@ -576,7 +604,7 @@ const coursesData = {
     title: "تمريض أطفال وحديثي الولادة نظري",
     subtitle: "حركة الشبيبة الفتحاوية - محاضرات تمريض الأطفال",
     slides: [
-      { name: "ملف مادة الأطفال (Pediatric PDF)", link: "./مادة pediatric.pdf" }
+      { name: "ملف مادة الأطفال (Pediatrics PDF)", link: "./pediatrics_material.pdf" }
     ],
     lectures: []
   },
@@ -600,7 +628,7 @@ const coursesData = {
     title: "تمريض جراحة باطنه (3) - Gerontology نظري",
     subtitle: "حركة الشبيبة الفتحاوية - محاضرات جراحة (3)",
     slides: [
-      { name: "سلايدات جراحة 3 (PDF)", link: "./سلايدات جراحة 3 .pdf" }
+      { name: "سلايدات جراحة 3 (PDF)", link: "./surgery3_slides.pdf" }
     ],
     lectures: [
       { name: "Surgery Lecture 1", link: "https://youtu.be/zvQp05hNuXA" },
@@ -695,7 +723,7 @@ const coursesData = {
     title: "النظريات التمريضية",
     subtitle: "حركة الشبيبة الفتحاوية - محاضرات النظريات التمريضية",
     slides: [
-      { name: "سلايدات النظريات التمريضية (PDF)", link: "./سلايدات نظريات .pdf" }
+      { name: "سلايدات النظريات التمريضية (PDF)", link: "./nursing_theories_slides.pdf" }
     ],
     lectures: [
       { name: "Nursing Theories – Lecture 1", link: "https://youtu.be/wp72T3MQ040" },
