@@ -67,6 +67,8 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
 @media(max-width:760px){.quicklinks{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.links-list{grid-template-columns:1fr}.hero{padding-top:25px}.quick{padding:15px}.section-head{align-items:start;flex-direction:column}}@media(max-width:460px){.grid{grid-template-columns:1fr}.topbar .wrap{justify-content:center}.search button{padding:0 13px}.quicklinks{gap:9px}.quick h3{font-size:14px}.quick p{font-size:11px}}
 .download-btn{display:inline-flex;align-items:center;gap:8px;background:var(--amber);color:white;padding:10px 18px;border-radius:10px;font-weight:bold;margin-top:12px;transition:.2s}.download-btn:hover{background:var(--amber-hover)}
 .slide-link{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px;margin-top:10px;border-radius:10px;background:#edf4f8;color:var(--navy);font-weight:bold;text-decoration:none;border:1px solid #b9d4df;transition:.2s}.slide-link:hover{background:var(--amber-light);border-color:var(--amber)}
+.note-box{background:#fff8e8;border:1px solid #fde68a;border-radius:12px;padding:15px 18px;margin-bottom:15px;color:#74551a;font-size:14px;line-height:1.7}
+.note-box strong{color:var(--amber-hover);display:block;margin-bottom:4px;font-size:15px}
 </style>
 </head>
 <body>
@@ -120,7 +122,7 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
   </div>
   <div class="resource-options" id="resourceOptions">
     <button type="button" class="resource-option" id="showLectures"><span class="resource-emoji">🎥</span><strong>المحاضرات</strong><small>فيديوهات المحاضرات مقسّمة حسب الموضوع</small></button>
-    <button type="button" class="resource-option" id="showSlides"><span class="resource-emoji">📑</span><strong>السلايدات والكتب</strong><small>ملفات العرض التقديمي والكتب الدراسية</small></button>
+    <button type="button" class="resource-option" id="showSlides"><span class="resource-emoji">📑</span><strong>السلايدات والكتب</strong><small>ملفات العرض التقديمي والكتب والإرشادات الدراسية</small></button>
   </div>
   <div id="lectureContent" class="lecture-content" hidden>
     <button type="button" class="page-back" id="backToOptionsLectures">← العودة إلى خيارات المادة</button>
@@ -315,7 +317,6 @@ function runSearch() {
 searchForm.addEventListener('submit', e => { e.preventDefault(); runSearch(); });
 searchInput.addEventListener('input', runSearch);
 
-// متغيرات لتذكر الحالة ومكان الرجوع
 let lastActiveSectionId = 'plan';
 let lastClickedCourseBtn = null;
 
@@ -326,14 +327,13 @@ quickToggles.forEach(button => {
   button.addEventListener('click', () => {
     const opening = target.style.display === 'none';
     
-    // إغلاق أي قسم آخر عند فتح قسم جديد
     document.querySelectorAll('.main-section').forEach(sec => sec.style.display = 'none');
     document.querySelectorAll('.quick-toggle').forEach(b => b.setAttribute('aria-expanded', 'false'));
 
     if (opening) {
       target.style.display = 'block';
       button.setAttribute('aria-expanded', 'true');
-      lastActiveSectionId = button.dataset.target; // حفظ آخر قسم شغال
+      lastActiveSectionId = button.dataset.target;
       target.scrollIntoView({behavior:'smooth', block:'start'});
     }
   });
@@ -352,7 +352,6 @@ departmentToggle.addEventListener('click', e => {
   if (opening) departmentSection.scrollIntoView({behavior:'smooth', block:'start'});
 });
 
-// إعدادات صفحة المواد التفصيلية
 const courseResources = document.getElementById('courseResources');
 const closeCourse = document.getElementById('closeCourse');
 const showLectures = document.getElementById('showLectures');
@@ -370,11 +369,15 @@ const slidesPlaceholder = document.getElementById('slidesPlaceholder');
 let activeCourseId = 'surgery2';
 let activeCourseName = 'تمريض جراحة باطنة (2) نظري';
 
+const mathInstructionNote = "💡 **إرشاد دراسي هكّام:** بالنسبة لمساق الرياضيات والجرعة، يُفضَّل كتابة القوانين والأمثلة الموجودة في ملف السلايدات على الدفتر أولًا بأول، ومتابعة المحاضرات باستمرار، مع حلّ المسائل والتدريبات مع مدرس المساق لضمان الفهم الجيد للمادة.";
+
 const coursesData = {
   med_term: {
     title: "مفردات طبية",
     subtitle: "حركة الشبيبة الفتحاوية - Medical Terminology Course Lectures",
-    slides: [],
+    slides: [
+      { name: "كتاب / ملف المفردات الطبية (PDF)", link: "./Medical Terminology.pdf" }
+    ],
     lectures: [
       { name: "Medical Terminology - Lecture (1)", link: "https://youtu.be/umuqjHr0Vls" },
       { name: "Medical Terminology - Lecture (2)", link: "https://youtu.be/AqZwWRIB5P4" },
@@ -500,6 +503,7 @@ const coursesData = {
   math_med: {
     title: "رياضيات للعلوم الصحية",
     subtitle: "حركة الشبيبة الفتحاوية - Mathematics for Medical Sciences Course Lectures",
+    note: mathInstructionNote,
     slides: [],
     lectures: [
       { name: "Lecture 1 - Section 1.1", link: "https://www.youtube.com/watch?v=zIjU7uClOeg" },
@@ -630,6 +634,7 @@ const coursesData = {
   dosage: {
     title: "علم حساب الجرعة العلاجية",
     subtitle: "حركة الشبيبة الفتحاوية - لجنة العلوم الطبية التطبيقية",
+    note: mathInstructionNote,
     slides: [],
     lectures: [
       { name: "المحاضرة الأولى", link: "https://drive.google.com/file/d/1Y5UGIApLmA7-JruAX6H9LR3UawryrlmH/view?usp=drivesdk" },
@@ -1113,7 +1118,6 @@ const coursesData = {
   }
 };
 
-// ربط أزرار المواد بصفحة المادة
 const subjectButtons = document.querySelectorAll('.subject-button');
 subjectButtons.forEach(btn => {
   btn.addEventListener('click', () => {
@@ -1123,7 +1127,7 @@ subjectButtons.forEach(btn => {
 
     activeCourseId = courseKey;
     activeCourseName = courseObj.title;
-    lastClickedCourseBtn = btn; // حفظ زر المادة المضغوط للعودة إليه
+    lastClickedCourseBtn = btn;
 
     courseTitle.textContent = courseObj.title;
     courseSubtitle.textContent = courseObj.subtitle;
@@ -1140,12 +1144,10 @@ subjectButtons.forEach(btn => {
   });
 });
 
-// العودة الذكية المحدثة
 closeCourse.addEventListener('click', () => {
   courseResources.hidden = true;
   document.querySelector('.quicklinks').style.display = 'grid';
   
-  // إظهار القسم الذي كان مفتوحاً قبل الدخول للمادة
   const targetSection = document.getElementById(lastActiveSectionId) || document.getElementById('plan');
   if (targetSection) {
     targetSection.style.display = 'block';
@@ -1153,7 +1155,6 @@ closeCourse.addEventListener('click', () => {
     if (quickBtn) quickBtn.setAttribute('aria-expanded', 'true');
   }
 
-  // العودة والتمرير السلس لنفس زر المادة الذي تم الضغط عليه
   if (lastClickedCourseBtn) {
     lastClickedCourseBtn.scrollIntoView({behavior:'smooth', block:'center'});
   } else if (targetSection) {
@@ -1186,13 +1187,24 @@ showSlides.addEventListener('click', () => {
   slidesContent.hidden = false;
   
   const courseObj = coursesData[activeCourseId];
+  let html = '';
+  
+  // إظهار ملاحظة أو نصيحة المساق إن وجدت
+  if (courseObj && courseObj.note) {
+    html += `<div class="note-box">${courseObj.note}</div>`;
+  }
+
   if (courseObj && courseObj.slides && courseObj.slides.length > 0) {
     slidesPlaceholder.hidden = true;
-    let html = '<div class="lecture-topic"><h4>قائمة السلايدات والكتب المتاحة</h4>';
+    html += '<div class="lecture-topic"><h4>قائمة السلايدات والكتب المتاحة</h4>';
     courseObj.slides.forEach(slide => {
       html += `<a href="${slide.link}" target="_blank" class="slide-link"><span>📄 ${slide.name}</span><span>عرض / تحميل PDF ↗</span></a>`;
     });
     html += '</div>';
+    customSlidesContainer.innerHTML = html;
+    customSlidesContainer.hidden = false;
+  } else if (courseObj && courseObj.note) {
+    slidesPlaceholder.hidden = true;
     customSlidesContainer.innerHTML = html;
     customSlidesContainer.hidden = false;
   } else {
