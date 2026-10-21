@@ -10,7 +10,7 @@
 :root{
   --navy:#12324a;
   --navy2:#1b4965;
-  --amber:#d97706; /* أصفر هادئ ومريح للعين */
+  --amber:#d97706; /* أصفر دافئ ومريح للعين */
   --amber-hover:#b45309;
   --amber-light:#fef3c7;
   --amber-border:#fde68a;
@@ -25,7 +25,7 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
 .topbar{background:#0b2335;color:#dce8ef;font-size:13px;padding:9px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
-/* الهيدر الفاتح مع خلفية الشعار الشفافة */
+/* الهيدر الفاتح */
 header{
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(244, 247, 250, 0.95)), url("./شعار مكتبة التمريض العصرية (1).png") center/cover no-repeat;
   color: var(--ink);
@@ -52,7 +52,7 @@ header{
 
 main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-48px;position:relative;z-index:2}.quick{display:block;width:100%;text-align:right;font:inherit;color:inherit;cursor:pointer;background:#edf4f8;border:1px solid #b9d4df;border-radius:17px;padding:18px;box-shadow:var(--shadow);transition:.2s}.quick[aria-expanded="true"]{background:white;border-color:var(--line)}.quick-toggle:focus-visible{outline:3px solid var(--amber);outline-offset:3px}.quick:hover,.card:hover{transform:translateY(-3px)}.quick .ico{font-size:24px}.quick h3{font-size:15px;margin:8px 0 2px}.quick p{font-size:11px;color:var(--muted);margin:0}section{scroll-margin-top:20px;margin-top:42px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:17px}.section-head h2{margin:0;font-size:24px;color:var(--navy)}.section-head p{margin:4px 0 0;color:var(--muted);font-size:14px}.pill{font-size:12px;color:var(--navy2);background:var(--amber-light);border:1px solid var(--amber-border);padding:6px 11px;border-radius:99px;white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:white;border:1px solid var(--line);border-radius:17px;padding:20px;box-shadow:var(--shadow);transition:.2s}.card h3{margin:0 0 7px;font-size:18px;color:var(--navy)}.card p{margin:0 0 15px;color:var(--muted);font-size:13px}.card .action{display:inline-flex;align-items:center;gap:7px;color:var(--navy2);font-size:13px;font-weight:bold;background:#edf4f8;padding:8px 12px;border-radius:99px}.year{border:1px solid var(--line);border-radius:15px;background:white;margin-bottom:10px;overflow:hidden}.year summary{cursor:pointer;padding:16px 19px;font-weight:bold;color:var(--navy);display:flex;justify-content:space-between;gap:10px;list-style:none}.year summary::-webkit-details-marker{display:none}.year summary:after{content:"＋";color:var(--amber)}.year[open] summary:after{content:"−"}.year-content{padding:0 19px 18px}.semester{background:#f5f8fa;border-radius:12px;padding:13px;margin-top:10px}.semester h4{margin:0 0 9px;color:var(--navy2)}.subject-list{display:flex;flex-wrap:wrap;gap:8px}.subject{font-size:13px;border:1px solid #dbe5eb;border-radius:8px;background:white;padding:7px 10px;color:#465c6b;font-weight:500}.links-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.link-row{display:flex;align-items:center;gap:13px;background:white;border:1px solid var(--line);border-radius:14px;padding:15px}.link-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--amber-light);font-size:21px;flex-shrink:0}.link-row strong{display:block;color:var(--navy)}.link-row small{color:var(--muted)}.link-row .go{margin-right:auto;color:var(--amber);font-weight:bold}.notice{margin-top:22px;background:#fff8e8;border:1px solid #f4dfad;color:#74551a;border-radius:13px;padding:13px 16px;font-size:13px}footer{background:#0b2335;color:#d8e5ed;padding:28px 0;text-align:center;font-size:13px}footer strong{color:white}footer p{margin:5px 0}.footer-note{color:#9eb6c5;font-size:12px}
 
-/* تنسيقات كروت الممثلين */
+/* تنسيقات الممثلين */
 .rep-main-card{background:#e8f4f8;border:1px solid #bce0ed;grid-column:1/-1}
 .rep-main-card h3{color:var(--navy);font-size:18px}
 .rep-main-card p{color:var(--ink);font-size:15px;margin-bottom:12px}
@@ -103,7 +103,7 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
 
 <section id="plan" style="display:none;" class="main-section">
 <div class="section-head"><div><h2>الخطة الدراسية (خطة التمريض)</h2><p>تفاصيل مواد السنوات الأربع والفصول الدراسية حسب القائمة المضافة.</p><a href="./Plan-nursing.pdf" target="_blank" class="download-btn">📄 عرض / تحميل خطة التمريض (PDF)</a></div><span class="pill">المستويات الأربعة</span></div><div id="planList">
-<details class="year" data-searchable><summary>السنة الأولى</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject" data-searchable>قرآن كريم (1)</span><span class="subject" data-searchable>اللغة العربية (1)</span><span class="subject" data-searchable>اللغة الإنجليزية (1)</span><span class="subject" data-searchable>تشريح وعلم وظائف الأعضاء (1)</span><span class="subject" data-searchable>مفردات طبية</span><span class="subject" data-searchable>بيولوجيا عامة</span><span class="subject" data-searchable>كيمياء للعلوم الصحية</span><span class="subject" data-searchable>الإسعافات الأولية</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject" data-searchable>دراسات في الفقه</span><span class="subject" data-searchable>تشريح وعلم وظائف الأعضاء (2)</span><span class="subject" data-searchable>رياضيات للعلوم الصحية</span><span class="subject" data-searchable>فيزياء للعلوم الصحية</span><span class="subject" data-searchable>كيمياء حيوية (1)</span><span class="subject" data-searchable>مبادئ الصحة النفسية</span></div></div></div></details>
+<details class="year" data-searchable><summary>السنة الأولى</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject" data-searchable>قرآن كريم (1)</span><span class="subject" data-searchable>اللغة العربية (1)</span><span class="subject" data-searchable>اللغة الإنجليزية (1)</span><button type="button" class="subject subject-button" data-course="anatomy1" data-searchable aria-haspopup="true">تشريح وعلم وظائف الأعضاء (1) ↗</button><button type="button" class="subject subject-button" data-course="med_term" data-searchable aria-haspopup="true">مفردات طبية ↗</button><button type="button" class="subject subject-button" data-course="biology" data-searchable aria-haspopup="true">بيولوجيا عامة ↗</button><span class="subject" data-searchable>كيمياء للعلوم الصحية</span><span class="subject" data-searchable>الإسعافات الأولية</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject" data-searchable>دراسات في الفقه</span><span class="subject" data-searchable>تشريح وعلم وظائف الأعضاء (2)</span><button type="button" class="subject subject-button" data-course="math_med" data-searchable aria-haspopup="true">رياضيات للعلوم الصحية ↗</button><button type="button" class="subject subject-button" data-course="physics_health" data-searchable aria-haspopup="true">فيزياء للعلوم الصحية ↗</button><button type="button" class="subject subject-button" data-course="biochem1" data-searchable aria-haspopup="true">كيمياء حيوية (1) ↗</button><button type="button" class="subject subject-button" data-course="mental_health_principles" data-searchable aria-haspopup="true">مبادئ الصحة النفسية ↗</button></div></div></div></details>
 <details class="year" data-searchable><summary>السنة الثانية</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject" data-searchable>دراسات في الحديث وعلومه</span><span class="subject" data-searchable>دراسات في العقيدة الإسلامية</span><button type="button" class="subject subject-button" data-course="ethics" data-searchable aria-haspopup="true">أخلاقيات مهنة التمريض ↗</button><button type="button" class="subject subject-button" data-course="fundamentals1" data-searchable aria-haspopup="true">أساسيات التمريض (1) نظري ↗</button><span class="subject" data-searchable>أساسيات تمريض (1) عملي</span><button type="button" class="subject subject-button" data-course="pharma" data-searchable aria-haspopup="true">علم الأدوية ↗</button><button type="button" class="subject subject-button" data-course="patho" data-searchable aria-haspopup="true">علم الأمراض ↗</button><button type="button" class="subject subject-button" data-course="dosage" data-searchable aria-haspopup="true">علم حساب الجرعة العلاجية ↗</button></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject" data-searchable>قرآن كريم (2)</span><button type="button" class="subject subject-button" data-course="fundamentals2" data-searchable aria-haspopup="true">أساسيات التمريض (2) نظري ↗</button><button type="button" class="subject subject-button" data-course="fundamentals2_practical" data-searchable aria-haspopup="true">أساسيات التمريض (2) عملي ↗</button><button type="button" class="subject subject-button" data-course="health_assessment" data-searchable aria-haspopup="true">التقييم الصحي السريري للمريض ↗</button><button type="button" class="subject subject-button" data-course="surgery1" data-searchable aria-haspopup="true">تمريض جراحة باطنة (1) نظري ↗</button><span class="subject" data-searchable>تمريض جراحة باطنة (1) عملي</span></div></div><div class="semester"><h4>الفصل الصيفي</h4><div class="subject-list"><span class="subject" data-searchable>تدريب اكلينيكي</span></div></div></div></details>
 <details class="year" data-searchable><summary>السنة الثالثة</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject" data-searchable>قرآن كريم (3)</span><button type="button" class="subject subject-button" data-course="growth" data-searchable aria-haspopup="true">علم النمو والتطور للإنسان ↗</button><button type="button" class="subject subject-button" data-course="surgery2" data-searchable aria-haspopup="true">تمريض جراحة باطنة (2) نظري ↗</button><span class="subject" data-searchable>تمريض جراحة باطنة (2) عملي</span><button type="button" class="subject subject-button" data-course="pediatrics" data-searchable aria-haspopup="true">تمريض أطفال وحديثي الولادة نظري ↗</button><span class="subject" data-searchable>تمريض أطفال وحديثي الولادة عملي</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject" data-searchable>دراسات في التفسير وعلوم القرآن</span><button type="button" class="subject subject-button" data-course="nutrition" data-searchable aria-haspopup="true">علم التغذية ↗</button><button type="button" class="subject subject-button" data-course="microbiology" data-searchable aria-haspopup="true">علم الأحياء الدقيقة ↗</button><button type="button" class="subject subject-button" data-course="surgery3" data-searchable aria-haspopup="true">تمريض جراحة باطنه (3) - Gerontology نظري ↗</button><span class="subject" data-searchable>تمريض جراحة باطنه (3) - Gerontology عملي</span><button type="button" class="subject subject-button" data-course="psychiatric" data-searchable aria-haspopup="true">تمريض الصحة النفسية / نظري ↗</button><span class="subject" data-searchable>تمريض الصحة النفسية / عملي</span></div></div></div></details>
 <details class="year" data-searchable><summary>السنة الرابعة</summary><div class="year-content"><div class="semester"><h4>الفصل الأول</h4><div class="subject-list"><span class="subject" data-searchable>فلسطين الأرض والإنسان</span><button type="button" class="subject subject-button" data-course="theories" data-searchable aria-haspopup="true">النظريات التمريضية ↗</button><button type="button" class="subject subject-button" data-course="research" data-searchable aria-haspopup="true">مناهج البحث العلمي للتمريض ↗</button><button type="button" class="subject subject-button" data-course="epidemiology" data-searchable aria-haspopup="true">الصحة العامة وعلم الوبائيات ↗</button><span class="subject" data-searchable>تمريض النساء والولادة نظري</span><span class="subject" data-searchable>تمريض النساء والولادة عملي</span></div></div><div class="semester"><h4>الفصل الثاني</h4><div class="subject-list"><span class="subject" data-searchable>قرآن كريم (4)</span><span class="subject" data-searchable>علوم البيئة</span><button type="button" class="subject subject-button" data-course="radiology" data-searchable aria-haspopup="true">مدخل لعلوم الأشعة ↗</button><button type="button" class="subject subject-button" data-course="critical_care" data-searchable aria-haspopup="true">تمريض العناية المكثفة / نظري ↗</button><span class="subject" data-searchable>تمريض العناية المكثفة / عملي</span><button type="button" class="subject subject-button" data-course="community_health" data-searchable aria-haspopup="true">تمريض صحة المجتمع نظري ↗</button><span class="subject" data-searchable>تمريض صحة المجتمع عملي</span><button type="button" class="subject subject-button" data-course="management" data-searchable aria-haspopup="true">الإدارة والقيادة في التمريض / النظري ↗</button><span class="subject" data-searchable>الإدارة والقيادة في التمريض / عملي</span><span class="subject" data-searchable>تدريب امتياز</span></div></div></div></details>
@@ -134,7 +134,7 @@ main{padding:30px 0 60px}.quicklinks{display:grid;grid-template-columns:repeat(4
   </div>
 </section>
 
-<!-- قسم الممثلين - مفتوح ومباشر -->
+<!-- قسم الممثلين -->
 <section id="representatives" style="display:none;" class="main-section">
 <div class="section-head">
   <div>
@@ -359,6 +359,200 @@ let activeCourseId = 'surgery2';
 let activeCourseName = 'تمريض جراحة باطنة (2) نظري';
 
 const coursesData = {
+  med_term: {
+    title: "مفردات طبية",
+    subtitle: "حركة الشبيبة الفتحاوية - Medical Terminology Course Lectures",
+    slides: [],
+    lectures: [
+      { name: "Medical Terminology - Lecture (1)", link: "https://youtu.be/umuqjHr0Vls" },
+      { name: "Medical Terminology - Lecture (2)", link: "https://youtu.be/AqZwWRIB5P4" },
+      { name: "Medical Terminology - Lecture (3)", link: "https://youtu.be/r3BLe_wMcek" },
+      { name: "Medical Terminology - Lecture (4)", link: "https://youtu.be/-kNrLzomN70" },
+      { name: "Medical Terminology - Lecture (5)", link: "https://youtu.be/1KVKXjFnoIM" },
+      { name: "Medical Terminology - Lecture (6)", link: "https://youtu.be/aoS6kOGoOlY" },
+      { name: "Medical Terminology - Lecture (7)", link: "https://youtu.be/wOfwLwO_Fbo" },
+      { name: "Medical Terminology - Lecture (8)", link: "https://youtu.be/WHSKSbZh61E" },
+      { name: "Medical Terminology - Lecture (9)", link: "https://youtu.be/NejsabBhsJ0" }
+    ]
+  },
+  biology: {
+    title: "بيولوجيا عامة",
+    subtitle: "حركة الشبيبة الفتحاوية - General Biology Course Lectures",
+    slides: [],
+    lectures: [
+      { name: "Chapter (1) - P1", link: "https://youtu.be/MXw4S65xkw8" },
+      { name: "Chapter (1) - P2", link: "https://youtu.be/3Sgd2PyOhcc" },
+      { name: "Chapter (1) - A", link: "https://youtu.be/DZUbi641uBk" },
+      { name: "Chapter (1) - B", link: "https://youtu.be/Dd8551n93ew" },
+      { name: "Chapter (1) - C", link: "https://youtu.be/wVmDFoGRe48" },
+      { name: "Chapter (2) - P1", link: "https://youtu.be/L7hm8lPrBDU" },
+      { name: "Chapter (2) - P2", link: "https://youtu.be/AGck4d1a2I4" },
+      { name: "Chapter (3) - P1", link: "https://youtu.be/aHJRzLDyFGc" },
+      { name: "Chapter (3) - P2", link: "https://youtu.be/74GN-M1azdQ" },
+      { name: "Chapter (4) - P1", link: "https://youtu.be/i4OMCT0Hobw" },
+      { name: "Chapter (4) - P2", link: "https://youtu.be/LM2rgSvMhgU" },
+      { name: "Chapter (4) - A", link: "https://youtu.be/la5jz3DojLQ" },
+      { name: "Chapter (4) - B", link: "https://youtu.be/dxBHL4gXcos" },
+      { name: "Chapter (4) - C", link: "https://youtu.be/td4iFgTy5-I" },
+      { name: "Chapter (4) - D", link: "https://youtu.be/gZ8SF5Gq2Js" },
+      { name: "Chapter (5) - P1", link: "https://youtu.be/e4QAAjDuMlg" },
+      { name: "Chapter (5) - P2", link: "https://youtu.be/k46vIcgYPak" },
+      { name: "Chapter (6) - P1", link: "https://youtu.be/RxkD1cWQ4_A" },
+      { name: "Chapter (6) - P2", link: "https://youtu.be/PK1Fk7_JtCw" },
+      { name: "Chapter (7) - P1", link: "https://youtu.be/oxRB5JsFwHM" },
+      { name: "Chapter (7) - P2", link: "https://youtu.be/uR46kNF4E_k" },
+      { name: "Chapter (8) - P1", link: "https://youtu.be/v4bGP3JOLhE" },
+      { name: "Chapter (8) - P2", link: "https://youtu.be/hCOgLZQBCro" },
+      { name: "Chapter (9) - P1", link: "https://youtu.be/ZRoIoJ75KsY" },
+      { name: "Chapter (9) - P2", link: "https://youtu.be/6mdM6-yUdu0" },
+      { name: "Chapter (10) - P1", link: "https://youtu.be/HDYnua28b54" },
+      { name: "Chapter (10) - P2", link: "https://youtu.be/0Dm5bp_UGJc" },
+      { name: "Chapter (11) - P1", link: "https://youtu.be/NnWGyiZD57o" },
+      { name: "Chapter (11) - P2", link: "https://youtu.be/smefQae_H0s" },
+      { name: "Chapter (12) - P1", link: "https://youtu.be/t_43ib0OgBo" },
+      { name: "Chapter (12) - P2", link: "https://youtu.be/8GUs_k88gHk" },
+      { name: "Chapter (12) - A", link: "https://youtu.be/SZkuqfLWt7s" },
+      { name: "Chapter (12) - B", link: "https://youtu.be/wMRpz7rMn1U" },
+      { name: "Chapter (13) - A", link: "https://youtu.be/n4q8XWHGL38" },
+      { name: "Chapter (13) - B", link: "https://youtu.be/GwHB559yT5o" },
+      { name: "Chapter (14) - A", link: "https://youtu.be/r1YwAViJCc4" },
+      { name: "Chapter (14) - B", link: "https://youtu.be/kWOeMYtT1-Y" },
+      { name: "Chapter (15) - A", link: "https://youtu.be/1ngMhICqT0c" },
+      { name: "Chapter (15) - B", link: "https://youtu.be/kTYNoZTuMqg" },
+      { name: "Chapter (15) - C", link: "https://youtu.be/HhalTLuCS5c" }
+    ]
+  },
+  anatomy1: {
+    title: "تشريح وعلم وظائف الأعضاء (1)",
+    subtitle: "حركة الشبيبة الفتحاوية - قائمة التشغيل الكاملة لمساق تشريح 1",
+    slides: [],
+    lectures: [
+      { name: "قائمة تشغيل محاضرات تشريح 1 كاملة", link: "https://youtube.com/playlist?list=PLRxAwfkovUAQ&si=Fkwc7boetOMr" }
+    ]
+  },
+  biochem1: {
+    title: "كيمياء حيوية (1)",
+    subtitle: "حركة الشبيبة الفتحاوية - محاضرات مساق كيمياء حيوية (1)",
+    slides: [],
+    lectures: [
+      { name: "Chapter (1) - P1", link: "https://youtu.be/zcafKL1e71g" },
+      { name: "Chapter (1) - P2", link: "https://youtu.be/dNzaOEg6lR8" },
+      { name: "Chapter (2) - P1", link: "https://youtu.be/8i7P0e04_3w" },
+      { name: "Chapter (2) - P2", link: "https://youtu.be/zvACMLMHr8A" },
+      { name: "Chapter (3) - P1", link: "https://youtu.be/35kqRjpQh7c" },
+      { name: "Chapter (3) - P2", link: "https://youtu.be/3lh--p1KpT8" },
+      { name: "Chapter (4) - P1", link: "https://youtu.be/jZEPh7zUWak" },
+      { name: "Chapter (4) - P2", link: "https://youtu.be/5jdAUgVyGFw" },
+      { name: "Chapter (5) - P1", link: "https://youtu.be/70FLverwTtI" },
+      { name: "Chapter (5) - P2", link: "https://youtu.be/naW2rz7M5eo" },
+      { name: "Chapter (5) - P3", link: "https://youtu.be/SvejDpcCaz0" },
+      { name: "Chapter (6) - P1", link: "https://youtu.be/lYlV3fziZuE" },
+      { name: "Chapter (6) - P2", link: "https://youtu.be/fcnPPYinzog" },
+      { name: "Chapter (7) - P1", link: "https://youtu.be/1d--KdPdtSo" },
+      { name: "Chapter (7) - P2", link: "https://youtu.be/Hvu3s8B7Vfw" },
+      { name: "Chapter (8) - P1", link: "https://youtu.be/muTaL3udNQE" },
+      { name: "Chapter (8) - P2", link: "https://youtu.be/xClQfZTgkKw" },
+      { name: "Chapter (9) - P1", link: "https://youtu.be/5zoiqo5lPGc" },
+      { name: "Chapter (9) - P2", link: "https://youtu.be/6_i-mC9WWPs" },
+      { name: "Chapter (10) - P1", link: "https://youtu.be/QAE8Ycz96dQ" },
+      { name: "Chapter (10) - P2", link: "https://youtu.be/F9UND_3PLDw" },
+      { name: "Chapter (11) - P1", link: "https://youtu.be/cXQHQl-eXsU" },
+      { name: "Chapter (11) - P2", link: "https://youtu.be/-CrtX6K99L0" },
+      { name: "Chapter (12) - P1", link: "https://youtu.be/DQ3ah16ynaI" },
+      { name: "Chapter (12) - P2", link: "https://youtu.be/G8I5Kl4HX3I" },
+      { name: "Chapter (13) - P1", link: "https://youtu.be/2yf1245_ijM" },
+      { name: "Chapter (13) - P2", link: "https://youtu.be/6gpIZ6vg8k8" }
+    ]
+  },
+  mental_health_principles: {
+    title: "مبادئ الصحة النفسية",
+    subtitle: "حركة الشبيبة الفتحاوية - Principles of Mental Health Course Lectures",
+    slides: [],
+    lectures: [
+      { name: "Lecture (1)", link: "https://youtu.be/pxPrdPuMMII" },
+      { name: "Lecture (2)", link: "https://youtu.be/0tYK3Vl3vr8" },
+      { name: "Lecture (3)", link: "https://youtu.be/0v8mbwRkmlc" },
+      { name: "Lecture (4)", link: "https://youtu.be/SUJzWYJhgKc" },
+      { name: "Lecture (5)", link: "https://youtu.be/Y8KApRXUt58" },
+      { name: "Lecture (6)", link: "https://youtu.be/KI9umHv2LfU" },
+      { name: "Lecture (7)", link: "https://youtu.be/cdmF-HBOH_k" },
+      { name: "Lecture (8)", link: "https://youtu.be/l7W8CHB6y4I" },
+      { name: "Lecture (9)", link: "https://youtu.be/wPDZOeU7BSE" },
+      { name: "Lecture (10)", link: "https://youtu.be/slPvxtSI4fE" },
+      { name: "Lecture (11)", link: "https://youtu.be/AYRyMv2_acw" },
+      { name: "Lecture (12)", link: "https://youtu.be/WdzZxdyrvjI" },
+      { name: "Lecture (13)", link: "https://youtu.be/V2oAx2DnC9M" },
+      { name: "Lecture (14)", link: "https://youtu.be/xn9gUEnxAvY" }
+    ]
+  },
+  math_med: {
+    title: "رياضيات للعلوم الصحية",
+    subtitle: "حركة الشبيبة الفتحاوية - Mathematics for Medical Sciences Course Lectures",
+    slides: [],
+    lectures: [
+      { name: "Lecture 1 - Section 1.1", link: "https://www.youtube.com/watch?v=zIjU7uClOeg" },
+      { name: "Lecture 2 - Section 1.1", link: "https://www.youtube.com/watch?v=NaF_CIyp9cU" },
+      { name: "Discussion - Section 1.1", link: "https://www.youtube.com/watch?v=cH7WGhTBqYo&list=PL3RkAmQWJXzx7A1ck41NSUFnuu-oPyS0r&index=4" },
+      { name: "Lecture 3 - Section 1.2", link: "https://www.youtube.com/watch?v=NDl06jlLEJM" },
+      { name: "Lecture 4 - Section 1.2", link: "https://www.youtube.com/watch?v=_zFfZLCkEWo" },
+      { name: "Discussion - Section 1.2 - Part 1", link: "https://www.youtube.com/watch?v=wpe8RBfGIhA" },
+      { name: "Lecture 5 - Sections 1.2 + 1.3", link: "https://www.youtube.com/watch?v=9AMtpiSLSWg" },
+      { name: "Discussion - Section 1.2 - Part 2", link: "https://www.youtube.com/watch?v=z9qpbeMJaoc" },
+      { name: "Lecture 6 - Section 1.3", link: "https://www.youtube.com/watch?v=zHJ3t9TLrqw" },
+      { name: "Discussion Section 1.3 - Part 1", link: "https://www.youtube.com/watch?v=mXgD0yUR0uc" },
+      { name: "Lecture 7 - Sections 1.3 + 2.1", link: "https://www.youtube.com/watch?v=xH4v8EM4SFs" },
+      { name: "Discussion - Section 1.3 - Part 2", link: "https://www.youtube.com/watch?v=jVZqX0SR-EA" },
+      { name: "Lecture 8 - Section 2.3", link: "https://www.youtube.com/watch?v=wHO-jO5njno" },
+      { name: "Discussion - Sections 2.1 + 2.3", link: "https://www.youtube.com/watch?v=xTcQdYTRzNE&list=PL3RkAmQWJXzx7A1ck41NSUFnuu-oPyS0r&index=21" },
+      { name: "Lecture 9 - Section 2.4", link: "https://www.youtube.com/watch?v=iM8Oe4WPE_g" },
+      { name: "Discussion Sections 2.3 + 2.4", link: "https://www.youtube.com/watch?v=TJdCrEbL5dM&list=PL3RkAmQWJXzx7A1ck41NSUFnuu-oPyS0r&index=23" },
+      { name: "Lecture 10 - Section 2.5", link: "https://www.youtube.com/watch?v=kVeCWEhVe6Y" },
+      { name: "Discussion Section 2.5", link: "https://youtu.be/F3JV5yv-5eE?si=M8-KyHs9pxLLFGXi" },
+      { name: "Lecture 11 - Sections 3.1 + 3.2", link: "https://youtu.be/XQ-4VZQ9Lcs?si=44l9KxM-tUi_pPpf" },
+      { name: "Discussion Sections 3.1 + 3.2", link: "https://youtu.be/cssxDM4oSQM?si=EUngrBTl6X3TC9Pc" },
+      { name: "Lecture 12 - Sections 3.3 to 3.7", link: "https://youtu.be/HGR_fp4aeNQ?si=uX6Yk4g_qf1W7rIb" },
+      { name: "Discussion - Sections 3.2 to 3.7", link: "https://youtu.be/2Vx7zDUAe5U?si=1DXDTBqevSA-mJZZ" },
+      { name: "Lecture 13 - Sections 4.1 to 4.4", link: "https://youtu.be/ox1u6PRcfpU?si=KQdpPI0Z2WMybZ4H" },
+      { name: "Lecture 14 - Section 4.5", link: "https://youtu.be/IdX5CZtlVso?si=hVMiMuJ4jwoRA0y0" },
+      { name: "Discussion - Sections 4.1 + 4.2", link: "https://youtu.be/94-EYy9IxHI?si=DWsB6NVfBCk2xtkD" },
+      { name: "Discussion - Sections 4.3 + 4.4 + 4.5 - Part 1", link: "https://youtu.be/lRt3_CxAQrk?si=1rSIL6j5OlOmfrjL" },
+      { name: "Discussion - Sections 4.3 + 4,4 + 4.5 - Part 2", link: "https://youtu.be/qeAjjoQDAi8?si=fwz_skkDngIxbNSx" },
+      { name: "Lecture 15 - Sections 5.1 + 5.2", link: "https://youtu.be/94MECfFrVlk?si=vMWmgVQq6r4I2HWD" },
+      { name: "Lecture 16 - Sections 5.4 + 5.5", link: "https://youtu.be/u86zHSSv5SU?si=pNPks2Wu7Fm3BnA-" },
+      { name: "Discussion - Section 5.1", link: "https://youtu.be/UIMQOVUVisE?si=aedNugYmjzsUO3ab" },
+      { name: "Discussion - Sections 5.2 and 5.4", link: "https://youtu.be/uy4sUk_BRAs?si=YhyX9OII0BizFwTJ" },
+      { name: "Lecture 17 - Section 5.6", link: "https://youtu.be/QQZjBd6K7go?si=PXseZ_5OxMkTvysJ" },
+      { name: "Discussion - Sections 5.5 and 5.6", link: "https://youtu.be/Gev8RLhvI7c?si=m9tLvaK-E42Y-YSC" },
+      { name: "Lecture 18 - Section 6.1", link: "https://youtu.be/tLHVZTdHuIM?si=5ySr0yihhymG2fTF" },
+      { name: "Discussion - Section 6.1", link: "https://youtu.be/ynCQOB0VO_8?si=6BLVsOwcaiqiruRM" }
+    ]
+  },
+  physics_health: {
+    title: "فيزياء للعلوم الصحية",
+    subtitle: "حركة الشبيبة الفتحاوية - د. خالد رمضان (محاضرات الفيزياء على Google Drive)",
+    slides: [],
+    lectures: [
+      { name: "ch 1 lecture 1", link: "https://drive.google.com/file/d/1YijRa897Wrzz4PceWdcAeoW3BX6TR-Is/view?usp=drivesdk" },
+      { name: "ch 1 dimension analysis", link: "https://drive.google.com/file/d/1YRodXQ7PbA4UFbbph88I6td77w2oD85B/view?usp=drivesdk" },
+      { name: "ch1 lecture 3", link: "https://drive.google.com/file/d/1_m9X8S52_TzMqstG5rjlNPvDbHXZJYPs/view?usp=drivesdk" },
+      { name: "Discussion ch 1", link: "https://drive.google.com/file/d/1tm9cwBpjI-jCcnGjFCoFtAFRM5_s8MZR/view?usp=drivesdk" },
+      { name: "ch 2 lecture 1", link: "https://drive.google.com/file/d/1MpRYMgn7esLUSYgz7m6l0LofLvo8hiVU/view?usp=drivesdk" },
+      { name: "ch 2 lecture 2", link: "https://drive.google.com/file/d/1BeWjmdklKilo33MnLlJ9RSipw_c-VZa1/view?usp=drivesdk" },
+      { name: "ch 2 lecture 3", link: "https://drive.google.com/file/d/1V0hFpNeNHEpEIj0NY-9VS9g5DWikIeuK/view?usp=drivesdk" },
+      { name: "ch 2 Discussion", link: "https://drive.google.com/file/d/1JxJZbDZ1jmcTnDqCXgmHNmRkblTeYmcb/view?usp=drivesdk" },
+      { name: "ch 3 Elastic properties of materials", link: "https://drive.google.com/file/d/1lNdjm7qRuxBt90dSruLYQ9HiXjIJsliy/view?usp=drivesdk" },
+      { name: "ch 3 young modulus", link: "https://drive.google.com/file/d/13ckbgmpp4L4EtZldUOCQMhSBDzhOtqbp/view?usp=drivesdk" },
+      { name: "ch 3 Bone fracture", link: "https://drive.google.com/file/d/16rl8z_8DJYScxHSyIeWwqNqkbztviJrF/view?usp=drivesdk" },
+      { name: "ch 3 disscusion", link: "https://drive.google.com/file/d/1_dgVplZ2AABfLmJhzNlKqxj97CZbFZFk/view?usp=drivesdk" },
+      { name: "Ch 4", link: "https://drive.google.com/file/d/1lLdJEk_z8-Lq862-f1G594e2bnCWr58b/view?usp=drivesdk" },
+      { name: "Ch 4 lecture 2", link: "https://drive.google.com/file/d/1nn-fMBnlG-xNwV5fE1vKTtGBM8_ZDSTF/view?usp=drivesdk" },
+      { name: "Ch 5", link: "https://drive.google.com/file/d/1Rdydo-aVf_888bNXYF4NzIqQninjYqaZ/view?usp=drivesdk" },
+      { name: "ch 5 lecture 1", link: "https://drive.google.com/file/d/1Rdydo-aVf_888bNXYF4NzIqQninjYqaZ/view?usp=drivesdk" },
+      { name: "ch 5 lecture 2", link: "https://drive.google.com/file/d/1q6QD05bEfgYvXSnNEgtUzxBR_PrsZcsQ/view?usp=drivesdk" },
+      { name: "ch 5 lecture 3", link: "https://drive.google.com/file/d/1SKwIf4HCO89VDhtLVZfeB2NuuNFMQstI/view?usp=drivesdk" },
+      { name: "ch 5 solved problems", link: "https://drive.google.com/file/d/15RWFiOrHmjs2GvkR8RVHTgwCk76MeWAb/view?usp=drivesdk" }
+    ]
+  },
   patho: {
     title: "علم الأمراض",
     subtitle: "حركة الشبيبة الفتحاوية - سلسلة محاضرات علم الأمراض",
@@ -584,7 +778,7 @@ const coursesData = {
       { name: "Phys 5", link: "https://youtu.be/hjFxQaSlcxE" },
       { name: "Phys 6", link: "https://youtu.be/rcqTCehXj7A" },
       { name: "Phys 7", link: "https://youtu.be/2XO6nUshwfg" },
-      { name: "Physical Assessment – Meeting Recording", link: "https://youtu.be/DLGbINuLZZ8" },
+      { name: "Physical Assessment – Meeting Recording", link: "https://youtu.be/DLGbINuLZD8" },
       { name: "Lung Assessment", link: "https://youtu.be/qXYsJuToUXc" },
       { name: "Abdominal Assessment", link: "https://youtu.be/KQpsBcqeqrY" },
       { name: "Abdominal Examination: Nursing Assessment", link: "https://youtu.be/1Xc7RYkz-CE" },
@@ -921,7 +1115,6 @@ subjectButtons.forEach(btn => {
     courseTitle.textContent = courseObj.title;
     courseSubtitle.textContent = courseObj.subtitle;
 
-    // إخفاء الواجهة الرئيسية وإظهار واجهة صفحة المادة
     document.querySelectorAll('.main-section').forEach(sec => sec.style.display = 'none');
     document.querySelector('.quicklinks').style.display = 'none';
     
@@ -934,7 +1127,6 @@ subjectButtons.forEach(btn => {
   });
 });
 
-// العودة من المادة إلى الصفحة الرئيسية
 closeCourse.addEventListener('click', () => {
   courseResources.hidden = true;
   document.querySelector('.quicklinks').style.display = 'grid';
@@ -942,7 +1134,6 @@ closeCourse.addEventListener('click', () => {
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
 
-// إظهار المحاضرات
 showLectures.addEventListener('click', () => {
   resourceOptions.style.display = 'none';
   lectureContent.hidden = false;
@@ -963,7 +1154,6 @@ showLectures.addEventListener('click', () => {
   }
 });
 
-// إظهار السلايدات والكتب
 showSlides.addEventListener('click', () => {
   resourceOptions.style.display = 'none';
   slidesContent.hidden = false;
@@ -986,14 +1176,12 @@ showSlides.addEventListener('click', () => {
   }
 });
 
-// العودة من المحاضرات إلى خيارات المادة
 const backToOptionsLectures = document.getElementById('backToOptionsLectures');
 backToOptionsLectures.addEventListener('click', () => {
   lectureContent.hidden = true;
   resourceOptions.style.display = 'grid';
 });
 
-// العودة من السلايدات إلى خيارات المادة
 const backToOptionsSlides = document.getElementById('backToOptionsSlides');
 backToOptionsSlides.addEventListener('click', () => {
   slidesContent.hidden = true;
