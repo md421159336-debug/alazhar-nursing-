@@ -315,15 +315,27 @@ function runSearch() {
 searchForm.addEventListener('submit', e => { e.preventDefault(); runSearch(); });
 searchInput.addEventListener('input', runSearch);
 
+// متغيرات لتذكر الحالة ومكان الرجوع
+let lastActiveSectionId = 'plan';
+let lastClickedCourseBtn = null;
+
 const quickToggles = document.querySelectorAll('.quick-toggle');
 quickToggles.forEach(button => {
   const target = document.getElementById(button.dataset.target);
   if (!target) return;
   button.addEventListener('click', () => {
     const opening = target.style.display === 'none';
-    target.style.display = opening ? 'block' : 'none';
-    button.setAttribute('aria-expanded', String(opening));
-    if (opening) target.scrollIntoView({behavior:'smooth', block:'start'});
+    
+    // إغلاق أي قسم آخر عند فتح قسم جديد
+    document.querySelectorAll('.main-section').forEach(sec => sec.style.display = 'none');
+    document.querySelectorAll('.quick-toggle').forEach(b => b.setAttribute('aria-expanded', 'false'));
+
+    if (opening) {
+      target.style.display = 'block';
+      button.setAttribute('aria-expanded', 'true');
+      lastActiveSectionId = button.dataset.target; // حفظ آخر قسم شغال
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+    }
   });
 });
 
@@ -1111,6 +1123,7 @@ subjectButtons.forEach(btn => {
 
     activeCourseId = courseKey;
     activeCourseName = courseObj.title;
+    lastClickedCourseBtn = btn; // حفظ زر المادة المضغوط للعودة إليه
 
     courseTitle.textContent = courseObj.title;
     courseSubtitle.textContent = courseObj.subtitle;
@@ -1127,11 +1140,25 @@ subjectButtons.forEach(btn => {
   });
 });
 
+// العودة الذكية المحدثة
 closeCourse.addEventListener('click', () => {
   courseResources.hidden = true;
   document.querySelector('.quicklinks').style.display = 'grid';
-  document.querySelectorAll('.main-section').forEach(sec => sec.style.display = 'none');
-  window.scrollTo({top: 0, behavior: 'smooth'});
+  
+  // إظهار القسم الذي كان مفتوحاً قبل الدخول للمادة
+  const targetSection = document.getElementById(lastActiveSectionId) || document.getElementById('plan');
+  if (targetSection) {
+    targetSection.style.display = 'block';
+    const quickBtn = document.querySelector(`.quick-toggle[data-target="${lastActiveSectionId}"]`);
+    if (quickBtn) quickBtn.setAttribute('aria-expanded', 'true');
+  }
+
+  // العودة والتمرير السلس لنفس زر المادة الذي تم الضغط عليه
+  if (lastClickedCourseBtn) {
+    lastClickedCourseBtn.scrollIntoView({behavior:'smooth', block:'center'});
+  } else if (targetSection) {
+    targetSection.scrollIntoView({behavior:'smooth', block:'start'});
+  }
 });
 
 showLectures.addEventListener('click', () => {
